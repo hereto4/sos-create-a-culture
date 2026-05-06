@@ -176,7 +176,7 @@ TECHS: {
         BOOST: {
             CIVIC_MAINTENANCE>MUL: 1.3,
             CIVIC_FURNITURE>MUL: 1.3,
-            NOBLE_COMPETENCE>MUL: 1.3,
+            ROOM_STOCKPILE>MUL: 1.3,
             BATTLE_MORALE>MUL: 0.7,
         },
         ICON: 32->TECH_RACE->43,
