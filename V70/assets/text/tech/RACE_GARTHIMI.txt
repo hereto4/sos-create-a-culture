@@ -50,7 +50,7 @@ TECHS: {
 
     GAR04: {
         NAME: "The Hivemind",
-        DESC: "MONORACE FOCUS | "Identity, individuality, independence... these are the trappings of the single-minded races. We are the Garthimi: we transcend the individual, instead embracing our absolute devotion to the Hive and its Queen. We will be as one mind, one hive; every worker a cog in the machine, every citizen a mere extension of the Queen's will."
+        DESC: "MONORACE FOCUS | "Identity, individuality, independence... these are the trappings of the single-minded. We are the Garthimi: we transcend the individual. Together we embrace our absolute devotion to the Hive and its Queen. We will be as one mind, one hive; every worker a cog in the machine, every citizen an extension of the Queen's will."
 ---
 [!] REQUIRES all non-slave Citizens to be Garthimi-only.",
     },

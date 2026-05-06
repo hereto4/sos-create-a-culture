@@ -1,11 +1,11 @@
 Changelog v1.3.0 - "The Multiplier Update"
 MAJOR CHANGES
-- ALL tech boosts are now multipliers (% bonuses) and all previous issues with multipliers have been fixes
+- ALL tech boosts are now multipliers (% bonuses) and all previous issues with multipliers have been fixed
 -- Existing savegames will receive the updated values without issue
 -- New games will need to enable the `ai-blocked` script on game start
--- [Dev Note] Multipliers should imrpove mod balance *significantly*
+-- [Dev Note] Multipliers should improve mod balance *significantly*
 BALANCING
-- All Noble Competence boosts replaced (they were only affecting AI) with the following boosts:
+- All Noble Competence boosts removed (they were only affecting AI), replaced with the following:
 -- Garthimi Meme [THE HIVEMEND]: Stockpile job boost
 -- Human Presence [HUMAN METROPOLIS]: Administration job boost
 -- Human Focus [FLEXIBLE MINDS]: +1 Max Nobles (per rank)

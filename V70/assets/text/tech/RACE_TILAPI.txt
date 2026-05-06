@@ -50,7 +50,7 @@ TECHS: {
 
     TIL04: {
         NAME: "Shadows in the Forest",
-        DESC: "MONORACE FOCUS | "We have not forgotten the purpose of our creation, to stand vigil between lands divine and forbidden. We will embrace our ancient mandate once more and reclaim the wilds of Syx--The mortal races will once again fear stepping into the forests, lest they never return."
+        DESC: "MONORACE FOCUS | "We have not forgotten the purpose of our creation, to stand vigil between lands divine and forbidden. We will embrace our ancient mandate once more and reclaim the wilds of Syx! The mortal races will once again fear stepping into the forests, lest they never return...."
 ---
 [!] REQUIRES all non-slave Citizens to be Tilapi-only.",
     },
