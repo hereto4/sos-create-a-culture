@@ -1,0 +1,58 @@
+Changelog v1.2.1
+MAJOR CHANGES
+- Monorace Focuses now have 6 ranks with effects that increase by 10% per rank (before they had 3 ranks and increased by 20% per rank)
+-- [Dev Note] This should allow more wiggle room to decide how much you want to invest in the more extreme effects of these techs, and increases cost beyond Rank III
+MINOR FIXES
+- Garthimi Monorace Focus "HIVEMIND" now correctly reduces lifespan by 5 years per rank, instead of 0.2
+- Removed the population requirement for Focuses and Memes, since it was redundant with the Presence tech requirement. No change on the player's side other than a cleaner display on tech info.
+BALANCING
+- Garthimi Monorace Focus "HIVEMIND" rebalanced across all effects
+- Garthimi Meme "SACRIFICE" morale boost reduced, stamina boost added
+- Amevian Monorace Focus "CULT OF THE DEPTHS" benefits have been reworked
+- Cretonian Monorace Focus "STRONGER TOGETHER" now has a 3rd drawback, reduced work safety, to match balance spread of other monorace focuses, and increased immigration boost
+- Dondorian Monorace Focus "BASTION OF ORDER" now has a 3rd drawback, increased trade tariff, and added increased judgement (desire for courts)
+- Human Monorace Focus "STATE PATRIOTS" immigration drawback increased, loyalty boost reduced, and added increased punishment (desire for executions, etc.)
+- Human Focus "FLEXIBLE MINDS" admin reduction replaced with morale reduction
+- Human Focus "FREE WILL" loyalty reduction replaced with admin reduction
+
+Changelog v1.2.0
+MAJOR ADDITIONS
+- Starting Bonus techs (the top-most tech in Culture trees) have been reworked:
+-- Renamed to "Presence Bonus"
+-- Every race has 3 Presence Bonus techs, requiring increasingly high pop counts to unlock (50 pops, 300 pops, 900 pops, respectively) 
+-- Each race's Presence Bonus grants +15, +30, and +60 Gob points on unlock, respectively
+-- Each Presence Bonus also grants a minor mostly-flavor stat bonus unique to that race (never more than 5%).
+-- Each Presence Bonus has a flavorful name and lore blurb describing the race's presence and impact on your city.
+-- New custom icons for every Presence Bonus.
+-- [Dev Note] The purpose of this rework is to keep unlocks coming throughout the mid-game. Previously, you had to ignore Culture after spending your starting Gov points, until you unlocked Governor Nobles.
+IMPROVEMENTS
+- Improved and expanded Culture tech flavor text, adhering to lore based on the official lore primer doc.
+-- Now over a hundred lines of flavor for the few of us that read that kind of stuff!
+- Improved formatting of flavor text for all techs, so it stands out from the game-related tech text. 
+NEXT UP
+- Finishing and releasing the CaC Vargen Redux Addon. 
+
+Changelog v1.1.1
+FIXES
+- Fixed hunger rate and soiling boosts granting the inverse of its intended effect
+
+Changelog v1.1.0
+MAJOR FIXES
+- Crazy resource values have been fixed
+-- Saves affected by high resource values should see values normalize over several in-game days
+- In order to fix the above, had to convert *all* Culture tech bonuses to Additives instead of Multipliers
+-- Need feedback on balance for these new values
+
+Changelog v1.0.1
+FIXES
+- Fixed harmless error log after game exit
+- Fixed Human's monorace focus "State Patriots" missing an effect
+- Fixed Tilapi meme "Savagery" not granting attack dexterity bonus
+- Fixed Amevia meme "Obstinance" not granting attack force bonus
+- Fixed Amevia monorace focus "Cult of the Depths" not granting Charcoalers debuff
+- Fixed Dondorian meme "Splendor" not granting Embassy bonus
+- Fixed Garthimi focus "Ambush Predators" not granting attack dexterity bonus and formation debuff
+IMPROVEMENTS
+- Added 2 new effects to every Monorace Focus (1 positive, 1 negative), and revamped existing monorace effects to be more impactful
+- Adjusted Tilapi memes to focus more on speed and dexterity, to differentiate them from the Vargens (upcoming optional addon)
+- Adjusted Dondorian monorace focus "Bastion of Order"; replaced Block bonus with Smelter bonus and removed Charge debuff

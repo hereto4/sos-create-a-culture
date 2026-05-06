@@ -1,0 +1,222 @@
+TREE: { ** tech id format = NAMYX (Name, X (Column), X (Row)  **
+
+    **    0     1     3
+	0: [AME00,AME10,AME20,],  ** Presences
+	1: [AME01,AME11,_____,],  ** Focuses
+	2: [AME02,AME12,_____,],  ** Memes 1-2
+	3: [AME03,AME13,_____,],  ** Memes 3-4
+	4: [AME04,_____,_____,],  ** Monorace
+},
+
+CATEGORY: 99,
+COLOR: 0_148_255,
+
+TECHS: {
+
+  ** Presences **
+
+	AME00: {
+	    COSTS: {
+	    },
+	    AI_BLOCKED: 1,
+	    LEVEL_MAX: 1,
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_Q_AMEVIA_CITIZEN_I: 50,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 15,
+		    RATES_WELL>MUL: 0.95,
+	    },
+		ICON: 32->TECH_RACE->0,
+	},
+	AME10: {
+	    COSTS: {
+	    },
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			AME00: 1,
+		},
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_Q_AMEVIA_CITIZEN_I: 300,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 30,
+		    CIVIC_SPOILAGE>MUL: 1.05,
+	    },
+		ICON: 32->TECH_RACE->14,
+	},
+	AME20: {
+	    COSTS: {
+	    },
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			AME10: 1,
+		},
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_Q_AMEVIA_CITIZEN_I: 900,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 60,
+		    PHYSICS_HEALTH>MUL: 1.05,
+	    },
+		ICON: 32->TECH_RACE->15,
+	},
+
+  ** Focuses **
+
+	AME01: {    ** Freshwater Custodians **
+		COSTS: {
+			CIVIC_GOV: 5,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 3,
+		LEVEL_COST_INC: 5,
+		REQUIRES_TECH_LEVEL: {
+			AME00: 1,
+		},
+		BOOST: {
+            ROOM_FISHERY_NORMAL>MUL: 1.1,
+            PHYSICS_SOILING>MUL: 0.9,
+            ROOM_PASTURE_GLOBDIEN>MUL: 1.1,
+            ROOM_REFINER_COALER>MUL: 0.9,
+            ROOM_REFINER_SMELTER>MUL: 0.9,
+		},
+		ICON: 32->TECH_RACE->8,
+	},
+	AME11: {    ** Saltwater Guardians **
+		COSTS: {
+			CIVIC_GOV: 5,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 3,
+		LEVEL_COST_INC: 5,
+		REQUIRES_TECH_LEVEL: {
+			AME00: 1,
+		},
+		BOOST: {
+            BATTLE_PIERCE_ATTACK>MUL: 1.1,
+            ROOM_BARRACKS_VANILLA>MUL: 1.1,
+            CIVIC_RAIDING>MUL: 1.1,
+            CIVIC_OPINION>MUL: 0.9,
+            WORLD_PROXIMITY>MUL: 0.9,
+		},
+		ICON: 32->TECH_RACE->8,
+	},
+
+  ** Memes **
+
+	AME02: {    ** Obstinance **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			AME00: 1,
+		},
+		BOOST: {
+		    BATTLE_OFFENCE_SKILL>MUL: 1.3,
+		    BATTLE_BLUNT_ATTACK>MUL: 1.3,
+		    BATTLE_MORALE>MUL: 1.3,
+		    BEHAVIOUR_SUBMISSION>MUL: 0.7,
+            ROOM_BARRACKS_VANILLA>MUL: 0.85,
+		},
+		ICON: 32->TECH_RACE->16,
+	},
+	AME12: {    ** Preservation **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			AME00: 1,
+		},
+		BOOST: {
+            CIVIC_SPOILAGE>MUL: 1.3,
+            ROOM_STOCKPILE>MUL: 1.3,
+            RATES_HUNGER>MUL: 0.85,
+            CIVIC_RAIDING>MUL: 0.7,
+		},
+		ICON: 32->TECH_RACE->24,
+	},
+	AME03: {    ** Reclusion **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			AME00: 1,
+		},
+		BOOST: {
+		    BEHAVIOUR_LOYALTY>MUL: 1.3,
+		    CIVIC_RAIDING>MUL: 1.3,
+		    ROOM_NURSERY_AMEVIA>MUL: 1.3,
+		    ROOM_NURSERY_GARTHIMI>MUL: 1.3,
+            WORLD_PROXIMITY>MUL: 0.7,
+		},
+		ICON: 32->TECH_RACE->32,
+	},
+	AME13: {    ** Aquatics **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			AME00: 1,
+		},
+		BOOST: {
+            ROOM_FISHERY_NORMAL>MUL: 1.3,
+            ROOM_MINE_CLAY>MUL: 1.3,
+            WORLD_RESOURCE_PRODUCTION_FISH>MUL: 1.3,
+            ROOM_REFINER_COALER>MUL: 0.7,
+            RATES_SKINNYDIP>MUL: 1.3,
+		},
+		ICON: 32->TECH_RACE->40,
+	},
+
+  ** Monorace **
+
+	AME04: {    ** Cult of the Depths **
+		COSTS: {
+			CIVIC_GOV: 10,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 6,
+		LEVEL_COST_INC: 10,
+		REQUIRES_TECH_LEVEL: {
+			AME00: 1,
+		},
+		REQUIRES: {
+		    EQUAL: {
+		        POPULATION_Q_AMEVIA_CITIZEN_F: 1.0,
+		    },
+		},
+		BOOST: {
+            ROOM_FISHERY_NORMAL>MUL: 1.15,
+            PHYSICS_HEALTH>MUL: 1.1,
+            BEHAVIOUR_SANITY>MUL: 1.1,
+            PHYSICS_STAMINA>MUL: 1.1,
+            ROOM_FARM_COTTON>MUL: 0.9,
+            ROOM_FARM_VEG>MUL: 0.9,
+            ROOM_WOODCUTTER>MUL: 0.9,
+            ROOM_PASTURE_AUR>MUL: 0.9,
+            ROOM_PASTURE_ENT>MUL: 0.9,
+            ROOM_PASTURE_ONX>MUL: 0.9,
+            RATES_SKINNYDIP>MUL: 1.15,
+            RATES_TEMPLE>MUL: 1.1,
+		},
+		ICON: 32->TECH_RACE->48,
+	},
+
+},

@@ -1,0 +1,58 @@
+NAME: "Garthimi Culture",
+TECHS: {
+
+  ** Presences **
+
+    GAR00: {
+        NAME: "Garthimi Cluster",
+        DESC: "MINOR PRESENCE | "Garthimis, the Insect Labourers, are violent creatures created by Aminion to wage war against the gods, left now to find their own destiny. A small cluster of Garthimis have settled in our city; alien and off-putting, our citizens give them a wide berth."",
+    },
+    GAR10: {
+        NAME: "Garthimi Colony",
+        DESC: "MODERATE PRESENCE | "The Garthimis in our city have grown to a full colony, a strange collection of rudimentary huts that most fear to visit. They can be seen organising stockpiles and transporting goods, hurriedly passing by our citizens without a word. Though still unnerving, no one can deny their efficiency."",
+    },
+    GAR20: {
+        NAME: "Garthimi Hive",
+        DESC: "MAJOR PRESENCE | "The Garthimi population has evolved into a full hive, a labyrinthine network of bare roads and undecorated housing bathed in a haze of intense humidity. Our citizens will never embrace the alien ways of these insects, but their drone-like dedication to work has earned the Garthimis a begrudging respect, and many have learned from their near-perfect coordination."",
+    },
+
+  ** Focuses **
+
+    GAR01: {
+        NAME: "Ambush Predators",
+        DESC: "FOCUS | ""We will encourage the primal nature of Garthimis; their original purpose as creations of war and violence."",
+    },
+    GAR11: {
+        NAME: "Hive Drones",
+        DESC: "FOCUS | "We will encourage the uncanny coordination of Garthimi workers; their ability to act in unison like a living machine."",
+    },
+
+  ** Memes **
+
+    GAR02: {
+        NAME: "Sacrifice",
+        DESC: "MEME | "Our culture will integrate the Garthimis' willingness to give life and limb for the greater good of the hive."",
+    },
+    GAR12: {
+        NAME: "Exploitation",
+        DESC: "MEME | "Our culture will integrate the Garthimi aptitude for extracting resources from the earth."",
+    },
+    GAR03: {
+        NAME: "Collectivism",
+        DESC: "MEME | "Our culture will integrate the Garthimis' collectivist values: the group before the individual, the one in service to the many."",
+    },
+    GAR13: {
+        NAME: "Pragmatism",
+        DESC: "MEME | "Our culture will integrate the utilitarian nature of the Garthimi: a preference for efficiency over luxury."",
+    },
+
+  ** Monorace **
+
+    GAR04: {
+        NAME: "The Hivemind",
+        DESC: "MONORACE FOCUS | "Identity, individuality, independence... these are the trappings of the single-minded races. We are the Garthimi: we transcend the individual, instead embracing our absolute devotion to the Hive and its Queen. We will be as one mind, one hive; every worker a cog in the machine, every citizen a mere extension of the Queen's will."
+---
+[!] REQUIRES all non-slave Citizens to be Garthimi-only.",
+    },
+
+},

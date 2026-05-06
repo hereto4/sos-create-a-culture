@@ -1,0 +1,58 @@
+NAME: "Dondorian Culture",
+TECHS: {
+
+  ** Presences **
+
+    DON00: {
+        NAME: "Dondorian Outpost",
+        DESC: "MINOR PRESENCE | "Dondorians, the Mountain Builders, are ancient beings born outside the natural order; methodical and orderly, their crafting skills are unmatched. A few Dondorians have settled in our city; a bit uptight, they've proven themselves model citizens."",
+    },
+    DON10: {
+        NAME: "Dondorian Fortress",
+        DESC: "MODERATE PRESENCE | "The Dondorians have expanded into a well-organised community. The eldest among them have begun sharing their wisdom with our citizens. Many others can be seen attending town meetings or giving unsolicited pointers at our workshops."",
+    },
+    DON20: {
+        NAME: "Dondorian Citadel",
+        DESC: "MAJOR PRESENCE | "The Dondorians have become the foundation of our city, both figuratively and literally. Every brick and every road have been laid with Dondorian craftsmanship; every home improved by maintenance tips shared by a Dondorian neighbour."",
+    },
+
+  ** Focus **
+
+    DON01: {
+        NAME: "Stalwart Citizens",
+        DESC: "FOCUS | "We will encourage the Dondorian's lawful nature; their need for strict order and structure."",
+    },
+    DON11: {
+        NAME: "Ancient Artisans",
+        DESC: "FOCUS | "We will encourage the Dondorian's legendary ability to mold and reshape the earth with artful precision."",
+    },
+
+  ** Memes **
+
+    DON02: {
+        NAME: "Bureaucracy",
+        DESC: "MEME | "Our culture will integrate the Dondorian's rigid adherence to law, structure, and methodical organisation."",
+    },
+    DON12: {
+        NAME: "Splendor",
+        DESC: "MEME | "Our culture will integrate the Dondorian's refinement and architectural legacy: monuments built to inspire awe and envy in other nations."",
+    },
+    DON03: {
+        NAME: "Craftsmanship",
+        DESC: "MEME | "Our culture will integrate the Dondorian's passion for handcrafted, artisan goods; works of art made only within the walls of our civilisation."",
+    },
+    DON13: {
+        NAME: "Industry",
+        DESC: "MEME | "Our culture will integrate the industrial prowess of Dondorian workers; the grit and labour required to extract and refine Syx's mineral wealth."",
+    },
+
+  ** Monorace **
+
+    DON04: {
+        NAME: "Bastion of Order",
+        DESC: "MONORACE FOCUS | "We will embrace the iron fist of Dondorian law, enforcing absolute order to build a perfect society. We will turn our legendary craftsmanship into an industrial machine, maximised for efficiency!"
+---
+[!] REQUIRES all non-slave Citizens to be Dondorian-only.",
+    },
+
+},

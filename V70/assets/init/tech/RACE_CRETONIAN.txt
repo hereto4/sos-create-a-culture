@@ -1,0 +1,217 @@
+TREE: { ** tech id format = NAMYX (Name, X (Column), X (Row)  **
+
+    **    0     1     3     **
+	0: [CRE00,CRE10,CRE20,],  ** Presences
+	1: [CRE01,CRE11,_____,],  ** Focuses
+	2: [CRE02,CRE12,_____,],  ** Memes 1-2
+	3: [CRE03,CRE13,_____,],  ** Memes 3-4
+	4: [CRE04,_____,_____,],  ** Monorace
+},
+
+CATEGORY: 99,
+COLOR: 0_148_255,
+
+TECHS: {
+
+  ** Presences **
+
+	CRE00: {
+	    COSTS: {
+	    },
+	    AI_BLOCKED: 1,
+	    LEVEL_MAX: 1,
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_CRETONIAN_CITIZEN_I: 50,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 15,
+		    ACTIVITY_SOCIAL>MUL: 1.05,
+	    },
+	    ICON: 32->TECH_RACE->1,
+	},
+	CRE10: {
+	    COSTS: {
+	    },
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			CRE00: 1,
+		},
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_CRETONIAN_CITIZEN_I: 300,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 30,
+		    ROOM_REFINER_BAKERY>MUL: 1.05,
+	    },
+	    ICON: 32->TECH_RACE->22,
+	},
+	CRE20: {
+	    COSTS: {
+	    },
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			CRE10: 1,
+		},
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_CRETONIAN_CITIZEN_I: 900,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 60,
+		    BEHAVIOUR_HAPPINESS>MUL: 1.05,
+	    },
+	    ICON: 32->TECH_RACE->23,
+	},
+
+  ** Focuses **
+
+	CRE01: {    ** Land of Plenty **
+		COSTS: {
+			CIVIC_GOV: 5,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 3,
+		LEVEL_COST_INC: 5,
+		REQUIRES_TECH_LEVEL: {
+			CRE00: 1,
+		},
+        BOOST: {
+            ROOM_REFINER_BAKERY>MUL: 1.1,
+            ROOM_FARM_GRAIN>MUL: 1.1,
+            BEHAVIOUR_HAPPINESS>MUL: 1.1,
+            PHYSICS_MASS>MUL: 1.05,
+            PHYSICS_STAMINA>MUL: 0.9,
+            CIVIC_RAIDING>MUL: 0.9,
+        },
+        ICON: 32->TECH_RACE->9,
+	},
+	CRE11: {    ** Warm Hearths **
+		COSTS: {
+			CIVIC_GOV: 5,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 3,
+		LEVEL_COST_INC: 5,
+		REQUIRES_TECH_LEVEL: {
+			CRE00: 1,
+		},
+        BOOST: {
+            CIVIC_IMMIGRATION>MUL: 1.1,
+            CIVIC_OPINION>MUL: 1.1,
+            CIVIC_PASIFISM>MUL: 1.1,
+            ACTIVITY_SOCIAL>MUL: 1.1,
+            BEHAVIOUR_LAWFULNESS>MUL: 0.9,
+            ROOM_BARRACKS_VANILLA>MUL: 0.9,
+        },
+        ICON: 32->TECH_RACE->9,
+	},
+
+  ** Memes **
+
+	CRE02: {    ** Agrarian **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			CRE00: 1,
+		},
+        BOOST: {
+            ROOM_FARM_GRAIN>MUL: 1.3,
+            ROOM_FARM_VEG>MUL: 1.3,
+            ROOM_FARM_FRUIT>MUL: 1.3,
+            ROOM_HUNTER_NORMAL>MUL: 0.7,
+        },
+        ICON: 32->TECH_RACE->17,
+	},
+	CRE12: {    ** Creature Comforts **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			CRE00: 1,
+		},
+        BOOST: {
+            ROOM_REFINER_BAKERY>MUL: 1.3,
+            ROOM_FARM_SPICES>MUL: 1.3,
+            ROOM_REFINER_BREWERY>MUL: 1.3,
+            PHYSICS_RESISTANCE_COLD>MUL: 0.7,
+        },
+        ICON: 32->TECH_RACE->25,
+	},
+	CRE03: {    ** Family Ties **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			CRE00: 1,
+		},
+        BOOST: {
+            ROOM_LIBRARY_NORMAL>MUL: 1.3,
+            ROOM_NURSERY_*>MUL: 1.3,
+            BEHAVIOUR_SANITY>MUL: 1.3,
+            CIVIC_IMMIGRATION>MUL: 0.7,
+            ACTIVITY_MOURN>MUL: 1.3,
+        },
+        ICON: 32->TECH_RACE->33,
+	},
+	CRE13: {    ** Pacifism **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			CRE00: 1,
+		},
+        BOOST: {
+            BEHAVIOUR_HAPPINESS>MUL: 1.3,
+            CIVIC_OPINION>MUL: 1.3,
+            CIVIC_PASIFISM>MUL: 1.3,
+            BATTLE_MORALE>MUL: 0.7,
+        },
+        ICON: 32->TECH_RACE->41,
+	},
+
+  ** Monorace **
+
+	CRE04: {    ** Stronger Together **
+		COSTS: {
+			CIVIC_GOV: 10,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 6,
+		LEVEL_COST_INC: 10,
+		REQUIRES_TECH_LEVEL: {
+			CRE00: 1,
+		},
+		REQUIRES: {
+			EQUAL: {
+				POPULATION_CRETONIAN_CITIZEN_F: 1.0,
+			},
+		},
+        BOOST: {
+            CIVIC_IMMIGRATION>MUL: 1.15,
+            BATTLE_FORMATION_SKILL>MUL: 1.1,
+            BATTLE_MORALE>MUL: 1.1,
+            CIVIC_RAIDING>MUL: 1.1,
+            BEHAVIOUR_SUBMISSION>MUL: 0.9,
+            BEHAVIOUR_SANITY>MUL: 0.9,
+            CIVIC_ACCIDENT>MUL: 0.9,
+        },
+        ICON: 32->TECH_RACE->49,
+	},
+
+},

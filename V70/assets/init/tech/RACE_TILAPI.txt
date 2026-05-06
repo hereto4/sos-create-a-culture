@@ -1,0 +1,214 @@
+TREE: { ** tech id format = NAMYX (Name, X (Column), X (Row)  **
+
+    **    0     1     3    **
+	0: [TIL00,TIL10,TIL20,],  ** Presences
+	1: [TIL01,TIL11,_____,],  ** Focuses
+	2: [TIL02,TIL12,_____,],  ** Memes 1-2
+	3: [TIL03,TIL13,_____,],  ** Memes 3-4
+	4: [TIL04,_____,_____,],  ** Monorace
+},
+
+CATEGORY: 99,
+COLOR: 0_100_100,
+
+TECHS: {
+
+  ** Presences **
+
+	TIL00: {
+	    COSTS: {
+	    },
+	    AI_BLOCKED: 1,
+	    LEVEL_MAX: 1,	    
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_TILAPI_CITIZEN_I: 50,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 15,
+		    CIVIC_RAIDING>MUL: 1.05,
+	    },
+	    ICON: 32->TECH_RACE->5,
+	},
+	TIL10: {
+	    COSTS: {
+	    },
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			TIL00: 1,
+		},
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_TILAPI_CITIZEN_I: 300,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 30,
+		    ROOM_ORCHARD_FRUIT>MUL: 1.05,
+	    },
+	    ICON: 32->TECH_RACE->54,
+	},
+	TIL20: {
+	    COSTS: {
+	    },
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			TIL10: 1,
+		},
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_TILAPI_CITIZEN_I: 900,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 60,
+		    BEHAVIOUR_SANITY>MUL: 1.05,
+	    },
+	    ICON: 32->TECH_RACE->55,
+	},
+
+  ** Focuses **
+
+	TIL01: {    ** Apex Hunters **
+		COSTS: {
+			CIVIC_GOV: 5,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 3,
+		LEVEL_COST_INC: 5,
+		REQUIRES_TECH_LEVEL: {
+			TIL00: 1,
+		},
+        BOOST: {
+            BATTLE_DEXTERITY>MUL: 1.1,
+            BATTLE_RANGED_BOW>MUL: 1.1,
+            ROOM_HUNTER_NORMAL>MUL: 1.1,
+            ROOM_FARM_GRAIN>MUL: 0.9,
+            ROOM_FARM_COTTON>MUL: 0.9,
+        },
+        ICON: 32->TECH_RACE->13,
+	},
+	TIL11: {    ** Syncretic Druids **
+		COSTS: {
+			CIVIC_GOV: 5,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 3,
+		LEVEL_COST_INC: 5,
+		REQUIRES_TECH_LEVEL: {
+			TIL00: 1,
+		},
+        BOOST: {
+            BEHAVIOUR_SANITY>MUL: 1.1,
+            PHYSICS_HEALTH>MUL: 1.1,
+            ROOM_ORCHARD_FRUIT>MUL: 1.1,
+            ROOM_MINE_COAL>MUL: 0.9,
+            ROOM_MINE_ORE>MUL: 0.9,
+        },
+        ICON: 32->TECH_RACE->13,
+	},
+
+  ** Memes **
+
+	TIL02: {    ** Determent **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			TIL00: 1,
+		},
+        BOOST: {
+            CIVIC_RAIDING>MUL: 1.3,
+            PHYSICS_SPEED>MUL: 1.3,
+            BATTLE_RANGED_BOW>MUL: 1.3,
+            CIVIC_IMMIGRATION>MUL: 0.7,
+        },
+        ICON: 32->TECH_RACE->21,
+	},
+	TIL12: {    ** Savagery **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			TIL00: 1,
+		},
+        BOOST: {
+            BATTLE_DEXTERITY>MUL: 1.3,
+            BATTLE_OFFENCE_SKILL>MUL: 1.3,
+            ROOM_HUNTER_NORMAL>MUL: 1.3,
+            BATTLE_FORMATION_SKILL>MUL: 0.7,
+        },
+        ICON: 32->TECH_RACE->29,
+	},
+	TIL03: {    ** Animal Kinship **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			TIL00: 1,
+		},
+        BOOST: {
+            ROOM_PASTURE_AUR>MUL: 1.3,
+            ROOM_PASTURE_ENT>MUL: 1.3,
+            ROOM_PASTURE_ONX>MUL: 1.3,
+            PHYSICS_SOILING>MUL: 1.3,
+        },
+        ICON: 32->TECH_RACE->37,
+	},
+	TIL13: {    ** Ecocentrism **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			TIL00: 1,
+		},
+        BOOST: {
+            ROOM_ORCHARD_FRUIT>MUL: 1.3,
+            BEHAVIOUR_SANITY>MUL: 1.3,
+            ROOM_WOODCUTTER>MUL: 1.3,
+            ROOM_REFINER_SMELTER>MUL: 0.7,
+        },
+        ICON: 32->TECH_RACE->45,
+	},
+
+  ** Monorace **
+
+	TIL04: {    ** Scourge of the Forest **
+		COSTS: {
+			CIVIC_GOV: 10,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 6,
+		LEVEL_COST_INC: 10,
+		REQUIRES_TECH_LEVEL: {
+			TIL00: 1,
+		},
+		REQUIRES: {
+		    EQUAL: {
+		        POPULATION_TILAPI_CITIZEN_F: 1.0,
+		    },
+		},
+        BOOST: {
+            CIVIC_RAIDING>MUL: 1.15,
+            BATTLE_DEXTERITY>MUL: 1.1,
+            ROOM_ARCHERY_VANILLA>MUL: 1.1,
+            PHYSICS_SPEED>MUL: 1.1,
+            ROOM_EMBASSY>MUL: 0.85,
+            CIVIC_OPINION>MUL: 0.9,
+            CIVIC_IMMIGRATION>MUL: 0.9,
+        },
+        ICON: 32->TECH_RACE->53,
+	},
+
+},

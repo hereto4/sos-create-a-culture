@@ -1,0 +1,108 @@
+WIKIS: [
+	{
+		CATEGORY: "Culture",
+		NAME: "Culture",
+		CATEGORIES: [],
+		LINK_KEY: CULTURE,
+		TEXT: "
+PURPOSE
+The goal of the <c 219_255_077 Culture system> is two-fold:
+1. to make every playthrough unique and determined by more than just your chosen race.
+2. to provide a 'tall' playstyle alternative to conquering the entire map.
+
+CONCEPT
+As your population grows, your culture will grow to reflect the different races living in your city--their strengths and weaknesses, and what traits of each race you wish to focus on--by spending Government (Gov) points.
+
+<c 219_255_077 Multiracial cities>: can choose what racial traits will define their society, emphasising certain races over others or representing every race equally.
+
+<c 219_255_077 Monorace cities> can double-down on their ethnostate culture, allowing hyper-specialised societies.
+
+In this way, no two cities will be the same, even if you're playing the same race.
+
+MECHANICS
+Your culture is determined by the <c 219_255_077 Culture unlock trees> found on the <a TECHNOLOGY Technology> page. These Culture techs are unlocked by spending Government (Gov) points, rather than Innovation or Knowledge.
+
+<c 219_255_077 Culture techs> require you to have a high-enough population count of their respective race to unlock the tech; the exact number is noted under "Requirements" in each Culture tech.
+*Note that your choice of starting race does not limit your available Culture tech: you just need to reach the required number of population for a certain race to unlock their Culture options.
+
+Each race has their own unique Culture tree. Each Culture tree has 8 unique techs to choose from: 1 <a CULTURE_CORE Starting Bonus>, 2 <a CULTURE_FOCUS Focuses>, 4 <a CULTURE_MEME Memes>, and 1 <a CULTURE_MONORACE Monorace Focus>. Only Monorace Focuses are mutually-exclusive with each other.
+		",
+    },
+	{
+		CATEGORY: "Culture",
+		NAME: "Presence Bonus",
+		CATEGORIES: [],
+		LINK_KEY: CULTURE_CORE,
+		TEXT: "
+The first 3 techs in every race's <a CULTURE Culture Tree> grant a <c 219_255_077 Presence Bonus> of Gov points, to let you customise your Culture before unlocking governor nobles.
+
+These techs have no cost, but require a certain population of a specific race to unlock, with each Presence Bonus requiring more population than the last (but also granting more Gov points in turn).
+		",
+    },
+	{
+		CATEGORY: "Culture",
+		NAME: "Focus",
+		CATEGORIES: [],
+		LINK_KEY: CULTURE_FOCUS,
+		TEXT: "
+CONCEPT
+One of the 3 types of <a CULTURE Culture> techs. <c 219_255_077 Focuses> provide a way to specialise citizens of a certain race towards one of their signature strengths.
+
+For example, you can choose if you want the Telapis in your city to specialise in being forest druids, or in being savage manhunters.
+
+MECHANICS
+Every race's Culture tree has <c 219_255_077 2 Focuses>. Focuses usually provide <c 100_200_255 3 benefits> and <c 255_180_180 2 drawbacks> that reflect which side of that race's unique skill-set you wish to focus on.
+
+STATISTICS
+Each Focus can be upgraded up to <c 219_255_077 Rank III>. Rank I costs 5 Gov; Rank II costs 10 Gov; Rank III costs 15 Gov.
+
+The statistical effects of the Focus (both positive and negative) increase in magnitude by 10% for every rank unlocked. Therefore, a max-rank Focus provides a <c 100_200_255 30% increase> to benefited stats and a <c 255_180_180 30% reduction> to detrimented stats.
+
+There are rare exceptions to this rule, which will be reflected in the effects breakdown on the relevant tech.
+		",
+    },
+	{
+		CATEGORY: "Culture",
+		NAME: "Meme",
+		CATEGORIES: [],
+		LINK_KEY: CULTURE_MEME,
+		TEXT: "
+CONCEPT
+One of the 3 types of <a CULTURE Culture> techs. <c 219_255_077 Memes> provide a strong playstyle-defining bundle of effects to your whole population; representing what aspects of each race you've chosen to fully integrate into your faction's society.
+
+Over time, the blend of Memes you choose across different races will create a unique cultural identity, a player-customised culture novel to every playthrough.
+
+MECHANICS
+Every race's Culture tree has <c 219_255_077 4 Memes>, which can be unlocked in any order and in any combination. Memes usually provide 3 benefits and only 1 drawback.
+
+STATISTICS
+Memes are one-time unlocks that cannot be upgraded, and cost 30 Gov points.
+
+The statistical effects of the Meme are 30%, meaning a <c 100_200_255 30% increase> to benefitted stats and a <c 255_180_180 30% reduction> to detrimented stats.
+		",
+    },
+	{
+		CATEGORY: "Culture",
+		NAME: "Monorace Focus",
+		CATEGORIES: [],
+		LINK_KEY: CULTURE_MONORACE,
+		TEXT: "
+CONCEPT
+One of the 3 types of <a CULTURE Culture> techs. A <c 219_255_077 Monorace Focus> is similar to a regular <a CULTURE_FOCUS Focus>, but requires a single-race capital; and, to compensate for losing out on the Culture techs of other races, it provides extremely potent effects.
+
+This allows you to hyper-specialise your one-race society and experiment with niche playstyles other races wouldn't be capable of.
+
+MECHANICS
+Every race's Culture tree has <c 219_255_0771 Monorace Focus>, granting a large array of benefits and drawbacks--but still granting a net-positive return on your investment.
+
+In order to unlock this tech, all your Citizens (Plebeian and above) must be of a single race. Slaves are not counted for this requirement.
+
+STATISTICS
+A Monorace Focus can be upgraded up to <c 219_255_077 Rank VI>. This is twice as many ranks as a regular Focus, allowing deeper specialisation of one-race societies. Rank I costs 10 Gov; Rank II costs 20 Gov; Rank III costs 30 Gov.
+
+Like regular Focuses, the statistical effects of this tech increase by 10% per rank, with max-rank effects <c 236_255_236 capping at 60%>.
+
+Like other Focuses, there are exceptions to this rule.
+		",
+    },
+],

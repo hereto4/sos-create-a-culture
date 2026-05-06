@@ -1,0 +1,214 @@
+TREE: { ** tech id format = NAMYX (Name, X (Column), X (Row)  **
+
+    **    0     1     3   **
+	0: [HUM00,HUM10,HUM20,],  ** Presences
+	1: [HUM01,HUM11,_____,],  ** Focuses
+	2: [HUM02,HUM12,_____,],  ** Memes 1-2
+	3: [HUM03,HUM13,_____,],  ** Memes 3-4
+	4: [HUM04,_____,_____,],  ** Monorace
+},
+
+CATEGORY: 99,
+COLOR: 0_148_255,
+
+TECHS: {
+
+  ** Presences **
+
+	HUM00: {
+	    COSTS: {
+	    },
+	    AI_BLOCKED: 1,
+	    LEVEL_MAX: 1,	    
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_HUMAN_CITIZEN_I: 50,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 15,
+		    RATES_SPEAKER>MUL: 1.05,
+	    },
+	    ICON: 32->TECH_RACE->4,
+	},
+	HUM10: {
+	    COSTS: {
+	    },
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			HUM00: 1,
+		},
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_HUMAN_CITIZEN_I: 300,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 30,
+		    ROOM_LABORATORY_NORMAL>MUL: 1.05,
+	    },
+	    ICON: 32->TECH_RACE->46,
+	},
+	HUM20: {
+	    COSTS: {
+	    },
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			HUM10: 1,
+		},
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_HUMAN_CITIZEN_I: 900,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 60,
+		    NOBLE_COMPETENCE>MUL: 1.05,
+	    },
+	    ICON: 32->TECH_RACE->47,
+	},
+
+  ** Focuses **
+
+	HUM01: {    ** Free Will **
+		COSTS: {
+			CIVIC_GOV: 5,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 3,
+		LEVEL_COST_INC: 5,
+		REQUIRES_TECH_LEVEL: {
+			HUM00: 1,
+		},
+		BOOST: {
+		    CIVIC_IMMIGRATION>MUL: 1.1,
+		    BEHAVIOUR_HAPPINESS>MUL: 1.1,
+		    BEHAVIOUR_SANITY>MUL: 1.1,
+		    BEHAVIOUR_LAWFULNESS>MUL: 0.9,
+		    ROOM_ADMIN_NORMAL>MUL: 0.9,
+		},
+		ICON: 32->TECH_RACE->12,
+	},
+	HUM11: {    ** Flexible Minds **
+		COSTS: {
+			CIVIC_GOV: 5,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 3,
+		LEVEL_COST_INC: 5,
+		REQUIRES_TECH_LEVEL: {
+			HUM00: 1,
+		},
+		BOOST: {
+            ROOM_UNIVERSITY_NORMAL>MUL: 1.1,
+            ROOM_LABORATORY_NORMAL>MUL: 1.1,
+		    NOBLE_COMPETENCE>MUL: 1.1,
+		    BEHAVIOUR_SANITY>MUL: 0.9,
+		    BATTLE_MORALE>MUL: 0.9,
+		},
+		ICON: 32->TECH_RACE->12,
+	},
+
+  ** Memes **
+
+	HUM02: {    ** Tenacity **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			HUM00: 1,
+		},
+		BOOST: {
+		    PHYSICS_RESISTANCE_COLD>MUL: 1.3,
+		    BATTLE_MORALE>MUL: 1.3,
+		    PHYSICS_STAMINA>MUL: 1.3,
+		    PHYSICS_ACCELERATION>MUL: 0.7,
+		},
+		ICON: 32->TECH_RACE->20,
+	},
+	HUM12: {    ** Ambition **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			HUM00: 1,
+		},
+		BOOST: {
+		    WORLD_BUILDING_CIVIC_CENTRE>MUL: 1.3,
+		    NOBLE_COMPETENCE>MUL: 1.3,
+		    ROOM_EMBASSY>MUL: 1.3,
+		    BEHAVIOUR_HAPPINESS>MUL: 0.7,
+		},
+		ICON: 32->TECH_RACE->28,
+	},
+	HUM03: {    ** Curiosity **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			HUM00: 1,
+		},
+		BOOST: {
+		    ROOM_LABORATORY_NORMAL>MUL: 1.3,
+		    ROOM_WORKSHOP_MECHANIC>MUL: 1.3,
+		    ROOM_UNIVERSITY_NORMAL>MUL: 1.3,
+		    CIVIC_ACCIDENT>MUL: 0.7,
+		},
+		ICON: 32->TECH_RACE->36,
+	},
+	HUM13: {    ** Storytelling **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			HUM00: 1,
+		},
+		BOOST: {
+		    ROOM_LIBRARY_NORMAL>MUL: 1.3,
+		    BEHAVIOUR_LAWFULNESS>MUL: 1.3,
+		    BATTLE_MORALE>MUL: 1.3,
+		    RATES_STAGE>MUL: 1.5,
+		},
+		ICON: 32->TECH_RACE->44,
+	},
+
+  ** Monorace **
+
+	HUM04: {    ** State Patriots **
+		COSTS: {
+			CIVIC_GOV: 10,
+		},
+	    AI_BLOCKED: 1,
+		LEVEL_MAX: 6,
+		LEVEL_COST_INC: 10,
+		REQUIRES_TECH_LEVEL: {
+			HUM00: 1,
+		},
+		REQUIRES: {
+		    EQUAL: {
+		        POPULATION_HUMAN_CITIZEN_F: 1.0,
+		    },
+		},
+		BOOST: {
+		    BEHAVIOUR_LOYALTY>MUL: 1.05,
+		    ROOM_BARRACKS_VANILLA>MUL: 1.1,
+		    ROOM_ADMIN_NORMAL>MUL: 1.1,
+		    WORLD_CONSCRIPTABLE_TARGET>MUL: 1.1,
+		    CIVIC_IMMIGRATION>MUL: 0.85,
+		    CIVIC_OPINION>MUL: 0.9,
+		    ACTIVITY_PUNISHMENT>MUL: 1.1,
+		},
+		ICON: 32->TECH_RACE->52,
+	},
+
+},
