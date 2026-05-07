@@ -31,7 +31,7 @@ TECHS: {
 
     CRE02: {
         NAME: "Agrarian",
-        DESC: "MEME | "Where would we be without o"",
+        DESC: "MEME | "Our culture will integrate the Cretonian's almost-religious dedication to farming; dutifully sowing the fields as if in service to Crator Himself."",
     },
     CRE12: {
         NAME: "Creature Comforts",

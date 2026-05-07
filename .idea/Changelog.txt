@@ -1,7 +1,7 @@
 Changelog v1.3.0 - "The Multiplier Update"
 MAJOR CHANGES
 - ALL tech boosts are now multipliers (% bonuses) and all previous issues with multipliers have been fixed
--- Existing savegames will receive the updated values without issue
+-- Existing savegames will receive the updated values without issue, no need to restart!
 -- New games will need to enable the `ai-blocked` script on game start
 -- [Dev Note] Multipliers should improve mod balance *significantly*
 BALANCING
@@ -10,6 +10,8 @@ BALANCING
 -- Human Presence [HUMAN METROPOLIS]: Administration job boost
 -- Human Focus [FLEXIBLE MINDS]: +1 Max Nobles (per rank)
 -- Human Meme [AMBITION]: +3 Noble Ranks
+FIXES
+- Fixed missing description for Cretonian Meme [AGRARIAN] 
 
 Changelog v1.2.1
 MAJOR CHANGES
