@@ -2,7 +2,7 @@ Changelog v1.3.0 - "The Multiplier Update"
 MAJOR CHANGES
 - ALL tech boosts are now multipliers (% bonuses) and all previous issues with multipliers have been fixed
 -- Existing savegames will receive the updated values without issue, no need to restart!
--- New games will need to enable the `ai-blocked` script on game start
+-- New games now run the `ai-blocked` script on start (script will run even if you don't enable it)
 -- [Dev Note] Multipliers should improve mod balance *significantly*
 BALANCING
 - All Noble Competence boosts removed (they were only affecting AI), replaced with the following:
