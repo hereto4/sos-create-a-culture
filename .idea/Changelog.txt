@@ -1,3 +1,12 @@
+Changelog v1.3.1
+BALANCING
+- Replaced drawbacks for Dondorian Meme [CRAFTSMANSHIP]:
+-- Removed '-30% Raid Security' penalty altogether
+-- Replaced Region Production (Furniture) penalty; now '-10% Region Production (Wood)'
+-- Replaced Region Production (Jewelry) penalty; now '-10% Region Production (Gems)'
+-- Replaced Region Production (Pottery) penalty; now '-10% Region Production (Clay)'
+-- [Dev Note] Previous penalties targeted buildings that didn't exist (Thank you @2chuu4u for catching this). New penalties now target the regional raw resource counterpart of each crafted good, to fit this Meme's theming of a city that produces high-quality in-house goods rather than importing from elsewhere.
+
 Changelog v1.3.0 - "The Multiplier Update"
 MAJOR CHANGES
 - ALL tech boosts are now multipliers (% bonuses) and all previous issues with multipliers have been fixed
