@@ -1,3 +1,13 @@
+Changelog v1.4.0 - "The Focus Update"
+*--savegame compatible!--*
+MAJOR CHANGES
+- All Focuses now ONLY apply their effects to their specific race. 
+-- This was always the intention, but not possible without a custom script (which this mod now includes).
+-- Only applies to Focuses; Memes and Presences effects remain city-wide across all subjects, regardless of race, as intended.
+-- [Dev Note] Focuses now function as 'race specializations' to steer a specific race in a direction of your choosing, in contrast to Memes which are race-agnostic city-wide effects that apply to all subjects.
+FIXES
+- The harmless (but annoying) 'missing AI_BLOCKED key' error that occured after exiting the game is now removed; you won't see it again.
+
 Changelog v1.3.1
 BALANCING
 - Replaced drawbacks for Dondorian Meme [CRAFTSMANSHIP]:

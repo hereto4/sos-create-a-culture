@@ -102,6 +102,7 @@ TECHS: {
 		REQUIRES_TECH_LEVEL: {
 			CRE00: 1,
 		},
+		TARGET_RACE: CRETONIAN,
         BOOST: {
             CIVIC_IMMIGRATION>MUL: 1.1,
             CIVIC_OPINION>MUL: 1.1,
