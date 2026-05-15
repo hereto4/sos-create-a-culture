@@ -20,11 +20,17 @@ TECHS: {
 
     GAR01: {
         NAME: "Ambush Predators",
-        DESC: "FOCUS | ""We will encourage the primal nature of Garthimis; their original purpose as creations of war and violence."",
+        DESC: "FOCUS | ""We will encourage the primal nature of Garthimis; their original purpose as creations of war and violence."
+---
+[!] Affects ONLY Garthimi subjects.
+",
     },
     GAR11: {
         NAME: "Hive Drones",
-        DESC: "FOCUS | "We will encourage the uncanny coordination of Garthimi workers; their ability to act in unison like a living machine."",
+        DESC: "FOCUS | "We will encourage the uncanny coordination of Garthimi workers; their ability to act in unison like a living machine."
+---
+[!] Affects ONLY Garthimi subjects.
+",
     },
 
   ** Memes **

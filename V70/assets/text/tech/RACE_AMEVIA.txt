@@ -20,11 +20,17 @@ TECHS: {
 
     AME01: {
         NAME: "Saltwater Custodians",
-        DESC: "FOCUS | "We will encourage the Amevias' signature connection with aquatic life; their role as caretakers of the oceans and seas of Syx."",
+        DESC: "FOCUS | "We will encourage the Amevias' signature connection with aquatic life; their role as caretakers of the oceans and seas of Syx."
+---
+[!] Affects ONLY Amevian subjects.
+",
     },
     AME11: {
         NAME: "Freshwater Guardians",
-        DESC: "FOCUS | "We will encourage the Amevias' steadfast protection of water, a fragile resource to be safeguarded from careless landwalkers."",
+        DESC: "FOCUS | "We will encourage the Amevias' steadfast protection of water, a fragile resource to be safeguarded from careless landwalkers."
+---
+[!] Affects ONLY Amevian subjects.
+",
     },
 
   ** Memes **

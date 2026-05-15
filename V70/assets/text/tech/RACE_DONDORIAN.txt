@@ -20,11 +20,17 @@ TECHS: {
 
     DON01: {
         NAME: "Stalwart Citizens",
-        DESC: "FOCUS | "We will encourage the Dondorian's lawful nature; their need for strict order and structure."",
+        DESC: "FOCUS | "We will encourage the Dondorian's lawful nature; their need for strict order and structure."
+---
+[!] Affects ONLY Dondorian subjects.
+",
     },
     DON11: {
         NAME: "Ancient Artisans",
-        DESC: "FOCUS | "We will encourage the Dondorian's legendary ability to mold and reshape the earth with artful precision."",
+        DESC: "FOCUS | "We will encourage the Dondorian's legendary ability to mold and reshape the earth with artful precision."
+---
+[!] Affects ONLY Dondorian subjects.
+",
     },
 
   ** Memes **

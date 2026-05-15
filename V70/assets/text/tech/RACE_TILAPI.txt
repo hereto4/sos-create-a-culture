@@ -20,11 +20,17 @@ TECHS: {
 
     TIL01: {
         NAME: "Apex Hunters",
-        DESC: "FOCUS | "We will encourage the Tilapi's role as savage manhunters and feared guardians of the forest."",
+        DESC: "FOCUS | "We will encourage the Tilapi's role as savage manhunters and feared guardians of the forest."
+---
+[!] Affects ONLY Tilapi subjects.
+",
     },
     TIL11: {
         NAME: "Syncretic Druids",
-        DESC: "FOCUS | "We will encourage the Tilapi's connection to the natural world; their Astarii-given affinity for the forests of Syx."",
+        DESC: "FOCUS | "We will encourage the Tilapi's connection to the natural world; their Astarii-given affinity for the forests of Syx."
+---
+[!] Affects ONLY Cretonian subjects.
+",
     },
 
   ** Memes **

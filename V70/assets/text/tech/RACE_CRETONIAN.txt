@@ -20,11 +20,17 @@ TECHS: {
 
     CRE01: {
         NAME: "Land of Plenty",
-        DESC: "FOCUS | "We will encourage the Cretonian's innate agricultural skills: the ability to work the land and receive its bounty as Crator had taught them."",
+        DESC: "FOCUS | "We will encourage the Cretonian's innate agricultural skills: the ability to work the land and receive its bounty as Crator had taught them."
+---
+[!] Affects ONLY Cretonian subjects.
+",
     },
     CRE11: {
         NAME: "Warm Hearths",
-        DESC: "FOCUS | "We will encourage the Cretonian's kind demeanour and friendly attitude; welcoming the peoples of Syx with open arms, good food, and a warm hearth."",
+        DESC: "FOCUS | "We will encourage the Cretonian's kind demeanour and friendly attitude; welcoming the peoples of Syx with open arms, good food, and a warm hearth."
+---
+[!] Affects ONLY Cretonian subjects.
+",
     },
 
   ** Memes **

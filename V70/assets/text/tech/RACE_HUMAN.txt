@@ -20,11 +20,17 @@ TECHS: {
 
     HUM01: {
         NAME: "Free Will",
-        DESC: "FOCUS | "We will encourage the most volatile trait of Humankind, the double-edged sword of choice and consequence."",
+        DESC: "FOCUS | "We will encourage the most volatile trait of Humankind, the double-edged sword of choice and consequence."
+---
+[!] Affects ONLY Human subjects.
+",
     },
     HUM11: {
         NAME: "Flexible Minds",
-        DESC: "FOCUS | "We will encourage the versality of the Human mind, their yearning to understand; to leave the comforts of ignorance."",
+        DESC: "FOCUS | "We will encourage the versality of the Human mind, their yearning to understand; to leave the comforts of ignorance."
+---
+[!] Affects ONLY Human subjects.
+",
     },
 
   ** Memes **

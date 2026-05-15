@@ -82,6 +82,7 @@ TECHS: {
 		REQUIRES_TECH_LEVEL: {
 			CRE00: 1,
 		},
+		TARGET_RACE: CRETONIAN,
         BOOST: {
             ROOM_REFINER_BAKERY>MUL: 1.1,
             ROOM_FARM_GRAIN>MUL: 1.1,
