@@ -7,6 +7,7 @@ MAJOR CHANGES
 -- [Dev Note] Focuses now function as 'race specializations' to steer a specific race in a direction of your choosing, in contrast to Memes which are race-agnostic city-wide effects that apply to all subjects.
 FIXES
 - The harmless (but annoying) 'missing AI_BLOCKED key' error that occured after exiting the game is now removed; you won't see it again.
+- A few stray culture techs were still being applied to AI factions; fixed these in new games. Should not be noticeable in existing saves regardless.
 
 Changelog v1.3.1
 BALANCING
