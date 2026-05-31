@@ -1,0 +1,207 @@
+TREE: {
+    **     1      2      3      4      5      6      7
+	1: [GARPR1,GARPR2,GARPR3,______,______,______,______,],
+	2: [______,______,______,______,______,______,______,],
+	3: [______,GARFO1,GARFO2,GARMO1,______,______,______,],
+	4: [______,______,______,______,______,______,______,],
+	5: [______,GARME1,GARME2,GARME3,GARME4,______,______,],
+},
+
+COLOR: 0_148_255,
+CATEGORY: 999,
+ICON: 32->TECH_RACE->3,
+
+TECHS: {
+
+  **--Presences-------------------------------------**
+
+	GARPR1: {
+	    COSTS: {},
+	    LEVEL_MAX: 1,
+        REQUIRES_TECH_LEVEL: {},    
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_GARTHIMI_CITIZEN_I: 50,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 15,
+		    ACTIVITY_SOCIAL>MUL: 0.95,
+	    },
+	    ICON: 32->TECH_RACE->3,
+	},
+	GARPR2: {
+	    COSTS: {},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			GARPR1: 1,
+		},
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_GARTHIMI_CITIZEN_I: 300,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 30,
+		    ROOM_STOCKPILE>MUL: 1.05,
+	    },
+	    ICON: 32->TECH_RACE->38,
+	},
+	GARPR3: {
+	    COSTS: {},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			GARPR2: 1,
+		},
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_GARTHIMI_CITIZEN_I: 900,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 60,
+		    CIVIC_ACCIDENT>MUL: 1.05,
+	    },
+	    ICON: 32->TECH_RACE->39,
+	},
+
+  **--Focuses-------------------------------------**
+
+	GARFO1: {    ** Ambush Predators **
+		COSTS: {
+			CIVIC_GOV: 5,
+		},
+		LEVEL_MAX: 3,
+		LEVEL_COST_INC: 5,
+		REQUIRES_TECH_LEVEL: {
+			GARPR1: 1,
+		},
+		TARGET_RACE: GARTHIMI,
+        BOOST: {
+            BATTLE_CHARGE>MUL: 1.1,
+            BATTLE_DEXTERITY>MUL: 1.1,
+            PHYSICS_ACCELERATION>MUL: 1.1,
+            BATTLE_FORMATION_SKILL>MUL: 0.9,
+            BEHAVIOUR_LAWFULNESS>MUL: 0.9,
+        },
+        ICON: 32->TECH_RACE->11,
+	},
+	GARFO2: {    ** Hive Drones **
+		COSTS: {
+			CIVIC_GOV: 5,
+		},
+		LEVEL_MAX: 3,
+		LEVEL_COST_INC: 5,
+		REQUIRES_TECH_LEVEL: {
+			GARPR1: 1,
+		},
+		TARGET_RACE: GARTHIMI,
+        BOOST: {
+            BEHAVIOUR_SUBMISSION>MUL: 1.1,
+            PHYSICS_SPEED>MUL: 1.1,
+            ROOM_STOCKPILE>MUL: 1.1,
+            ROOM_LABORATORY_NORMAL>MUL: 0.9,
+            ROOM_LIBRARY_NORMAL>MUL: 0.9,
+        },
+        ICON: 32->TECH_RACE->11,
+	},
+
+  **--Memes-------------------------------------**
+
+	GARME1: {    ** Sacrifice **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			GARPR1: 1,
+		},
+        BOOST: {
+            BATTLE_MORALE>MUL: 1.3,
+            PHYSICS_STAMINA>MUL: 1.3,
+            BEHAVIOUR_SUBMISSION>MUL: 1.3,
+            BATTLE_DEFENCE_SKILL>MUL: 0.7,
+        },
+        ICON: 32->TECH_RACE->19,
+	},
+	GARME2: {    ** Exploitation **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			GARPR1: 1,
+		},
+        BOOST: {
+            ROOM_MINE_COAL>MUL: 1.3,
+            ROOM_MINE_ORE>MUL: 1.3,
+            ROOM_MINE_STONE>MUL: 1.3,
+            CIVIC_SPOILAGE>MUL: 0.7,
+        },
+        ICON: 32->TECH_RACE->27,
+	},
+	GARME3: {    ** Collectivism **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			GARPR1: 1,
+		},
+        BOOST: {
+            BEHAVIOUR_LAWFULNESS>MUL: 1.3,
+            BEHAVIOUR_SUBMISSION>MUL: 1.3,
+            ROOM_ADMIN_NORMAL>MUL: 1.3,
+            BEHAVIOUR_HAPPINESS>MUL: 0.7,
+        },
+        ICON: 32->TECH_RACE->35,
+	},
+	GARME4: {    ** Pragmatism **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			GARPR1: 1,
+		},
+        BOOST: {
+            CIVIC_MAINTENANCE>MUL: 1.3,
+            CIVIC_FURNITURE>MUL: 1.3,
+            ROOM_STOCKPILE>MUL: 1.3,
+            BATTLE_MORALE>MUL: 0.7,
+        },
+        ICON: 32->TECH_RACE->43,
+	},
+
+  **--Monorace-------------------------------------**
+
+	GARMO1: {    ** The Hivemind **
+		COSTS: {
+			CIVIC_GOV: 10,
+		},
+		LEVEL_MAX: 6,
+		LEVEL_COST_INC: 10,
+		REQUIRES_TECH_LEVEL: {
+			GARPR1: 1,
+		},
+		REQUIRES: {
+		    EQUAL: {
+		        POPULATION_GARTHIMI_CITIZEN_F: 1.0,
+		    },
+		},
+        BOOST: {
+            ROOM_BREEDER_GARTHIMI>MUL: 1.15,
+            BEHAVIOUR_LAWFULNESS>MUL: 1.1,
+            BEHAVIOUR_LOYALTY>MUL: 1.1,
+            BATTLE_MORALE>MUL: 1.1,
+            PHYSICS_DEATH_AGE>MUL: 0.9,
+            CIVIC_IMMIGRATION>MUL: 0.85,
+            CIVIC_OPINION>MUL: 0.9,
+            ROOM_LABORATORY_NORMAL>MUL: 0.9,
+            ACTIVITY_SOCIAL>MUL: 0.85,
+            ACTIVITY_MOURN>MUL: 0.85,
+        },
+        ICON: 32->TECH_RACE->51,
+	},
+
+},

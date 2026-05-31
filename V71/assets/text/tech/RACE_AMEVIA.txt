@@ -1,0 +1,64 @@
+NAME: "Amevian Culture",
+TECHS: {
+
+  ** Presences **
+
+    AMEPR1: {
+        NAME: "Amevian Lounge",
+        DESC: "MINOR PRESENCE | "Amevias, the Aquatic Sentinels, are reclusive lizardfolk born from the Depths, dedicated to protecting the natural waters of Syx. A small lounge of Amevias have settled in our city; they've taken to gathering around wells and glaring at anyone who dirties the water."",
+    },
+    AMEPR2: {
+        NAME: "Amevian Tribe",
+        DESC: "MODERATE PRESENCE | "Our Amevias have organised themselves into a tribe. They no longer refer to others as 'soulless land-walkers', and have taken to instructing citizens on the proper preservation of fish and eggs."",
+    },
+    AMEPR3: {
+        NAME: "Amevian Clan",
+        DESC: "MAJOR PRESENCE | "The Amevias have become a pillar of the community, keeping our waterways clean and our stockpiles fresh. No source of water in our city is ever seen without a dozen Amevias swimming in it, limbs sprawled like a starfish as they float atop the waves."",
+    },
+
+  ** Focuses **
+
+    AMEFO1: {
+        NAME: "Saltwater Custodians",
+        DESC: "FOCUS | "We will encourage the Amevias' signature connection with aquatic life; their role as caretakers of the oceans and seas of Syx."
+---
+[!] Affects ONLY Amevian subjects.
+",
+    },
+    AMEFO2: {
+        NAME: "Freshwater Guardians",
+        DESC: "FOCUS | "We will encourage the Amevias' steadfast protection of water, a fragile resource to be safeguarded from careless landwalkers."
+---
+[!] Affects ONLY Amevian subjects.
+",
+    },
+
+  ** Memes **
+
+    AMEME1: {
+        NAME: "Obstinance",
+        DESC: "MEME | "Our culture will integrate the Amevias' rebellious nature, their refusal to submit to another or compromise on a free, independent life."",
+    },
+    AMEME2: {
+        NAME: "Preservation",
+        DESC: "MEME | "Our culture will integrate the Amevias' preservationist instincts; securing and safeguarding resources as a matter of survival."",
+    },
+    AMEME3: {
+        NAME: "Reclusion",
+        DESC: "MEME | "Our culture will integrate the Amevias' reclusive nature; an indifference to world affairs, a desire to be simply left alone."",
+    },
+    AMEME4: {
+        NAME: "Aquatics",
+        DESC: "MEME | "Our culture will integrate the Amevias' symbiosis with the waters of Syx, their ability to thrive in oceans and rivers."",
+    },
+
+  ** Mono-Race **
+
+    AMEMO1: {
+        NAME: "Cult of the Depths",
+        DESC: "MONORACE FOCUS | "All Amevias feel the pull of the Depths, the nostalgia for a home we've never seen. It's time we begin our return to the ocean, and fully embrace our aquatic nature! We'll sever all ties with the world above and abandon any dependence we had on land; taking as we wish from the soulless land-walkers as we leave them behind!"
+---
+[!] REQUIRES all non-slave Citizens to be Amevia-only.",
+    },
+
+},

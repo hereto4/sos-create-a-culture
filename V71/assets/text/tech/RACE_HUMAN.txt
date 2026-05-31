@@ -1,0 +1,64 @@
+NAME: "Human Culture",
+TECHS: {
+
+  ** Presences **
+
+    HUMPR1: {
+        NAME: "Human Dwelling",
+        DESC: "MINOR PRESENCE | "Humans, the Adaptable Thinkers, are the last creation of the Astarii, gifted with free will and flexible minds. A small population of Humans have settled in our city; outspoken and unpredictable, they're already expressing their countless opinions to any citizen who passes by."",
+    },
+    HUMPR2: {
+        NAME: "Human Suburb",
+        DESC: "MODERATE PRESENCE | "The Humans have quickly expanded into a haphazard suburb of wood and cobble, no two houses decorated quite the same way. Curious of every little thing, they can be seen in the least likely of places. More often they're heard: loudly disagreeing with one another on whose way is best."",
+    },
+    HUMPR3: {
+        NAME: "Human Metropolis",
+        DESC: "MAJOR PRESENCE | "The Humans have grown our settlement into a true metropolitan city, inserting themselves into every facet of our kingdom. Their competitive nature may be chaotic, but its this ambition that has pushed our society past what we once thought possible."",
+    },
+
+  ** Focuses **
+
+    HUMFO1: {
+        NAME: "Free Will",
+        DESC: "FOCUS | "We will encourage the most volatile trait of Humankind, the double-edged sword of choice and consequence."
+---
+[!] Affects ONLY Human subjects.
+",
+    },
+    HUMFO2: {
+        NAME: "Flexible Minds",
+        DESC: "FOCUS | "We will encourage the versality of the Human mind, their yearning to understand; to leave the comforts of ignorance."
+---
+[!] Affects ONLY Human subjects.
+",
+    },
+
+  ** Memes **
+
+    HUMME1: {
+        NAME: "Tenacity",
+        DESC: "MEME | "Our culture will integrate the strength of the Human spirit: the ability to persevere even when all hope seems lost."",
+    },
+    HUMME2: {
+        NAME: "Ambition",
+        DESC: "MEME | "Our culture will integrate the pride and drive of Humankind: the desire to excel and the will to dominate."",
+    },
+    HUMME3: {
+        NAME: "Curiosity",
+        DESC: "MEME | "Our culture will integrate the Human's need to discover and innovate; and the ingenuity to put that knowledge to use."",
+    },
+    HUMME4: {
+        NAME: "Storytelling",
+        DESC: "MEME | "Our culture will integrate the social tapestry that binds Humans together: tales of heroes to aspire to, lessons taught through fiction."",
+    },
+
+  ** Monoraces **
+
+    HUMMO1: {
+        NAME: "State Patriots",
+        DESC: "MONORACE FOCUS | "Foreigners have schemed outside our borders for too long. To survive we must embrace our tribalist nature: strength in brotherhood, comradery in arms, and obedience to a strong authority figure. We shall rally behind the state flag and defend our way of life--it's us or them!"
+---
+[!] REQUIRES all non-slave Citizens to be Human-only.",
+    },
+
+},

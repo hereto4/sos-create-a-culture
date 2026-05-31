@@ -1,3 +1,22 @@
+Changelog v1.5.0 - "Game Update v71"
+v71 COMPATBILITY
+- made compatible with update v71:
+-- Pacifism (deprecated in v71) swapped to Trust
+-- Trade Fee Discount (deprecated in v71) swapped to Trade Proximity Toll
+-- many other backend updates to json and target_race script
+- Removed my custom AI_BLOCKED script; no longer necessary with v71's new AI tech code 
+ADDITIONS
+- improved tooltip visuals: 
+-- effects now sort from high-to-low in tooltips when hovering over a tech
+-- positive effects and negative effects are split into two groups for visual clarity
+- Reworked Culture tech tree layouts to take advantage of v71's new tab system
+-- Each race now has their own tab for Culture techs
+-- Added custom icons for each Culture tree on v71's tech page tab list
+
+Changelog v1.4.1
+FIXES
+- Fixed minor text mistake in Tilapi Focus [SYNCRETIC DRUIDS] description.
+
 Changelog v1.4.0 - "The Focus Update"
 *--savegame compatible!--*
 MAJOR CHANGES

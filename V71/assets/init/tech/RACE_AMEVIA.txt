@@ -1,0 +1,212 @@
+TREE: {
+    **     1      2      3      4      5      6      7
+	1: [AMEPR1,AMEPR2,AMEPR3,______,______,______,______,],
+	2: [______,______,______,______,______,______,______,],
+	3: [______,AMEFO1,AMEFO2,AMEMO1,______,______,______,],
+	4: [______,______,______,______,______,______,______,],
+	5: [______,AMEME1,AMEME2,AMEME3,AMEME4,______,______,],
+},
+
+COLOR: 0_148_255,
+CATEGORY: 999,
+ICON: 32->TECH_RACE->0,
+
+TECHS: {
+
+  **--Presences-------------------------------------**
+
+	AMEPR1: {
+	    COSTS: {},
+	    LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {},
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_Q_AMEVIA_CITIZEN_I: 50,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 15,
+		    RATES_WELL>MUL: 0.95,
+	    },
+		ICON: 32->TECH_RACE->0,
+	},
+	AMEPR2: {
+	    COSTS: {},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			AMEPR1: 1,
+		},
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_Q_AMEVIA_CITIZEN_I: 300,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 30,
+		    CIVIC_SPOILAGE>MUL: 1.05,
+	    },
+		ICON: 32->TECH_RACE->14,
+	},
+	AMEPR3: {
+	    COSTS: {},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			AMEPR2: 1,
+		},
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_Q_AMEVIA_CITIZEN_I: 900,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 60,
+		    PHYSICS_HEALTH>MUL: 1.05,
+	    },
+		ICON: 32->TECH_RACE->15,
+	},
+
+  **--Focuses-------------------------------------**
+
+	AMEFO1: {    ** Freshwater Custodians **
+		COSTS: {
+			CIVIC_GOV: 5,
+		},
+		LEVEL_MAX: 3,
+		LEVEL_COST_INC: 5,
+		REQUIRES_TECH_LEVEL: {
+			AMEPR1: 1,
+		},
+		TARGET_RACE: Q_AMEVIA,
+		BOOST: {
+            ROOM_FISHERY_NORMAL>MUL: 1.1,
+            PHYSICS_SOILING>MUL: 0.9,
+            ROOM_PASTURE_GLOBDIEN>MUL: 1.1,
+            ROOM_REFINER_COALER>MUL: 0.9,
+            ROOM_REFINER_SMELTER>MUL: 0.9,
+		},
+		ICON: 32->TECH_RACE->8,
+	},
+	AMEFO2: {    ** Saltwater Guardians **
+		COSTS: {
+			CIVIC_GOV: 5,
+		},
+		LEVEL_MAX: 3,
+		LEVEL_COST_INC: 5,
+		REQUIRES_TECH_LEVEL: {
+			AMEPR1: 1,
+		},
+		TARGET_RACE: Q_AMEVIA,
+		BOOST: {
+            BATTLE_PIERCE_ATTACK>MUL: 1.1,
+            ROOM_BARRACKS_VANILLA>MUL: 1.1,
+            CIVIC_RAIDING>MUL: 1.1,
+            CIVIC_OPINION>MUL: 0.9,
+            WORLD_PROXIMITY>MUL: 0.9,
+		},
+		ICON: 32->TECH_RACE->8,
+	},
+
+  **--Memes-------------------------------------**
+
+	AMEME1: {    ** Obstinance **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			AMEPR1: 1,
+		},
+		BOOST: {
+		    BATTLE_OFFENCE_SKILL>MUL: 1.3,
+		    BATTLE_BLUNT_ATTACK>MUL: 1.3,
+		    BATTLE_MORALE>MUL: 1.3,
+		    BEHAVIOUR_SUBMISSION>MUL: 0.7,
+            ROOM_BARRACKS_VANILLA>MUL: 0.85,
+		},
+		ICON: 32->TECH_RACE->16,
+	},
+	AMEME2: {    ** Preservation **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			AMEPR1: 1,
+		},
+		BOOST: {
+            CIVIC_SPOILAGE>MUL: 1.3,
+            ROOM_STOCKPILE>MUL: 1.3,
+            RATES_HUNGER>MUL: 0.85,
+            CIVIC_RAIDING>MUL: 0.7,
+		},
+		ICON: 32->TECH_RACE->24,
+	},
+	AMEME3: {    ** Reclusion **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			AMEPR1: 1,
+		},
+		BOOST: {
+		    BEHAVIOUR_LOYALTY>MUL: 1.3,
+		    CIVIC_RAIDING>MUL: 1.3,
+		    ROOM_NURSERY_*>MUL: 1.3,
+		    ROOM_BREEDER_*>MUL: 1.3,
+            WORLD_PROXIMITY>MUL: 0.7,
+		},
+		ICON: 32->TECH_RACE->32,
+	},
+	AMEME4: {    ** Aquatics **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			AMEPR1: 1,
+		},
+		BOOST: {
+            ROOM_FISHERY_NORMAL>MUL: 1.3,
+            ROOM_MINE_CLAY>MUL: 1.3,
+            WORLD_PRODUCTION_RES_FISH>MUL: 1.3,
+            ROOM_REFINER_COALER>MUL: 0.7,
+            RATES_SKINNYDIP>MUL: 1.3,
+		},
+		ICON: 32->TECH_RACE->40,
+	},
+
+  **--Monorace-------------------------------------**
+
+	AMEMO1: {    ** Cult of the Depths **
+		COSTS: {
+			CIVIC_GOV: 10,
+		},
+		LEVEL_MAX: 6,
+		LEVEL_COST_INC: 10,
+		REQUIRES_TECH_LEVEL: {
+			AMEPR1: 1,
+		},
+		REQUIRES: {
+		    EQUAL: {
+		        POPULATION_Q_AMEVIA_CITIZEN_F: 1.0,
+		    },
+		},
+		BOOST: {
+            ROOM_FISHERY_NORMAL>MUL: 1.15,
+            PHYSICS_HEALTH>MUL: 1.1,
+            BEHAVIOUR_SANITY>MUL: 1.1,
+            PHYSICS_STAMINA>MUL: 1.1,
+            ROOM_FARM_COTTON>MUL: 0.9,
+            ROOM_FARM_VEG>MUL: 0.9,
+            ROOM_WOODCUTTER>MUL: 0.9,
+            ROOM_PASTURE_AUR>MUL: 0.9,
+            ROOM_PASTURE_ENT>MUL: 0.9,
+            ROOM_PASTURE_ONX>MUL: 0.9,
+            RATES_SKINNYDIP>MUL: 1.15,
+            RATES_TEMPLE>MUL: 1.1,
+		},
+		ICON: 32->TECH_RACE->48,
+	},
+
+},

@@ -1,0 +1,64 @@
+NAME: "Cretonian Culture",
+TECHS: {
+
+  ** Presences **
+
+    CREPR1: {
+        NAME: "Cretonian Homestead",
+        DESC: "MINOR PRESENCE | "Cretonians, the Agrarian Pacifists, are peaceful children of Crator, a simple folk defined by their love for food and connection to the land. A small Cretonian homestead has settled in our city; despite their status as newcomers, they've already made introductions and are inviting citizens over for dinner."",
+    },
+    CREPR2: {
+        NAME: "Cretonian Hamlet",
+        DESC: "MODERATE PRESENCE | "Cretonian neighbourhoods have expanded into a hamlet, a destination among citizens for good food and friendly faces. Everyone seems to know a special homemade recipe a Cretonian neighbour shared with them, and the Cretonian concept of 'second breakfast' is becoming increasingly popular as well."",
+    },
+    CREPR3: {
+        NAME: "Cretonian Countryside",
+        DESC: "MAJOR PRESENCE | "Where would we be without our Cretonian friends? Their food lines our tables, their farms feed our city. Cretonians have opened their hearths and homes to all, and we are all the happier for it."",
+    },
+
+  ** Focuses **
+
+    CREFO1: {
+        NAME: "Land of Plenty",
+        DESC: "FOCUS | "We will encourage the Cretonian's innate agricultural skills: the ability to work the land and receive its bounty as Crator had taught them."
+---
+[!] Affects ONLY Cretonian subjects.
+",
+    },
+    CREFO2: {
+        NAME: "Warm Hearths",
+        DESC: "FOCUS | "We will encourage the Cretonian's kind demeanour and friendly attitude; welcoming the peoples of Syx with open arms, good food, and a warm hearth."
+---
+[!] Affects ONLY Cretonian subjects.
+",
+    },
+
+  ** Memes **
+
+    CREME1: {
+        NAME: "Agrarian",
+        DESC: "MEME | "Our culture will integrate the Cretonian's almost-religious dedication to farming; dutifully sowing the fields as if in service to Crator Himself."",
+    },
+    CREME2: {
+        NAME: "Creature Comforts",
+        DESC: "MEME | "Our culture will integrate the Cretonian's love of simple comforts; food and drink enjoyed beside a warm hearth."",
+    },
+    CREME3: {
+        NAME: "Family Ties",
+        DESC: "MEME | "Our culture will integrate the Cretonian's tightly-knit family life, and the passing of knowledge from one generation to the next."",
+    },
+    CREME4: {
+        NAME: "Pacifism",
+        DESC: "MEME | "Our culture will integrate the Cretonian's gentle nature; a peaceful contentment free of bloodshed."",
+    },
+
+  ** Monorace **
+
+    CREMO1: {
+        NAME: "Stronger Together",
+        DESC: "MONORACE FOCUS | "We will embrace a new future for the Cretonians! We'll learn from the history of our ancestors, whose lands fell to invaders time and time again. This time, we will stifle our gentle nature and band together--braving battle to defend hearth and home!"
+---
+[!] REQUIRES all non-slave Citizens to be Cretonian-only.",
+    },
+
+},

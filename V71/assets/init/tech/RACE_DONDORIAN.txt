@@ -1,25 +1,24 @@
-TREE: { ** tech id format = NAMYX (Name, X (Column), X (Row)  **
-
-    **    0     1     3
-	0: [DON00,DON10,DON20,],  ** Presences
-	1: [DON01,DON11,_____,],  ** Focuses
-	2: [DON02,DON12,_____,],  ** Memes 1-2
-	3: [DON03,DON13,_____,],  ** Memes 3-4
-	4: [DON04,_____,_____,],  ** Monorace
+TREE: {
+    **     1      2      3      4      5      6      7
+	1: [DONPR1,DONPR2,DONPR3,______,______,______,______,],
+	2: [______,______,______,______,______,______,______,],
+	3: [______,DONFO1,DONFO2,DONMO1,______,______,______,],
+	4: [______,______,______,______,______,______,______,],
+	5: [______,DONME1,DONME2,DONME3,DONME4,______,______,],
 },
 
-CATEGORY: 99,
 COLOR: 0_148_255,
+CATEGORY: 999,
+ICON: 32->TECH_RACE->2,
 
 TECHS: {
 
-  ** Presence **
+  **--Presence-------------------------------------**
 
-	DON00: {
-	    COSTS: {
-	    },
-	    AI_BLOCKED: 1,
-	    LEVEL_MAX: 1,	    
+	DONPR1: {
+	    COSTS: {},
+	    LEVEL_MAX: 1,	
+	    REQUIRES_TECH_LEVEL: {},    
 		REQUIRES: {
 			GREATERE: {
 				POPULATION_DONDORIAN_CITIZEN_I: 50,
@@ -31,13 +30,11 @@ TECHS: {
 	    },
 	    ICON: 32->TECH_RACE->2,
 	},
-	DON10: {
-	    COSTS: {
-	    },
-	    AI_BLOCKED: 1,
+	DONPR2: {
+	    COSTS: {},
 		LEVEL_MAX: 1,
 		REQUIRES_TECH_LEVEL: {
-			DON00: 1,
+			DONPR1: 1,
 		},
 		REQUIRES: {
 			GREATERE: {
@@ -50,13 +47,11 @@ TECHS: {
 	    },
 	    ICON: 32->TECH_RACE->30,
 	},
-	DON20: {
-	    COSTS: {
-	    },
-	    AI_BLOCKED: 1,
+	DONPR3: {
+	    COSTS: {},
 		LEVEL_MAX: 1,
 		REQUIRES_TECH_LEVEL: {
-			DON10: 1,
+			DONPR2: 1,
 		},
 		REQUIRES: {
 			GREATERE: {
@@ -70,17 +65,16 @@ TECHS: {
 	    ICON: 32->TECH_RACE->31,
 	},
 
-  ** Focuses **
+  **--Focuses-------------------------------------**
 
-	DON01: {    ** Stalwart Citizens **
+	DONFO1: {    ** Stalwart Citizens **
 		COSTS: {
 			CIVIC_GOV: 5,
 		},
-	    AI_BLOCKED: 1,
 		LEVEL_MAX: 3,
 		LEVEL_COST_INC: 5,
 		REQUIRES_TECH_LEVEL: {
-			DON00: 1,
+			DONPR1: 1,
 		},
 		TARGET_RACE: DONDORIAN,
 		BOOST: {
@@ -92,15 +86,14 @@ TECHS: {
 		},
 		ICON: 32->TECH_RACE->10,
 	},
-	DON11: {    ** Ancient Artisans **
+	DONFO2: {    ** Ancient Artisans **
 		COSTS: {
 			CIVIC_GOV: 5,
 		},
-	    AI_BLOCKED: 1,
 		LEVEL_MAX: 3,
 		LEVEL_COST_INC: 5,
 		REQUIRES_TECH_LEVEL: {
-			DON00: 1,
+			DONPR1: 1,
 		},
 		TARGET_RACE: DONDORIAN,
 		BOOST: {
@@ -113,16 +106,15 @@ TECHS: {
 		ICON: 32->TECH_RACE->10,
 	},
 
-  ** Memes **
+  **--Memes-------------------------------------**
 
-	DON02: {    ** Bureaucracy **
+	DONME1: {    ** Bureaucracy **
 		COSTS: {
 			CIVIC_GOV: 30,
 		},
-	    AI_BLOCKED: 1,
 		LEVEL_MAX: 1,
 		REQUIRES_TECH_LEVEL: {
-			DON00: 1,
+			DONPR1: 1,
 		},
 		BOOST: {
             ROOM_LIBRARY_NORMAL>MUL: 1.3,
@@ -133,14 +125,13 @@ TECHS: {
 		},
 		ICON: 32->TECH_RACE->18,
 	},
-	DON12: {    ** Splendor **
+	DONME2: {    ** Splendor **
 		COSTS: {
 			CIVIC_GOV: 30,
 		},
-	    AI_BLOCKED: 1,
 		LEVEL_MAX: 1,
 		REQUIRES_TECH_LEVEL: {
-			DON00: 1,
+			DONPR1: 1,
 		},
 		BOOST: {
 		    ROOM_WORKSHOP_MASON>MUL: 1.3,
@@ -150,33 +141,31 @@ TECHS: {
 		},
 		ICON: 32->TECH_RACE->26,
 	},
-	DON03: {    ** Craftsmanship **
+	DONME3: {    ** Craftsmanship **
 		COSTS: {
 			CIVIC_GOV: 30,
 		},
-	    AI_BLOCKED: 1,
 		LEVEL_MAX: 1,
 		REQUIRES_TECH_LEVEL: {
-			DON00: 1,
+			DONPR1: 1,
 		},
 		BOOST: {
             ROOM_WORKSHOP_CARPENTER>MUL: 1.3,
             ROOM_WORKSHOP_JEWELRY>MUL: 1.3,
             ROOM_WORKSHOP_POTTERY>MUL: 1.3,
-            WORLD_RESOURCE_PRODUCTION__WOOD>MUL: 0.9,
-            WORLD_RESOURCE_PRODUCTION_GEM>MUL: 0.9,
-            WORLD_RESOURCE_PRODUCTION_CLAY>MUL: 0.9,
+            WORLD_PRODUCTION_RES_WOOD>MUL: 0.9,
+            WORLD_PRODUCTION_RES_GEM>MUL: 0.9,
+            WORLD_PRODUCTION_RES_CLAY>MUL: 0.9,
 		},
 		ICON: 32->TECH_RACE->34,
 	},
-	DON13: {    ** Industry **
+	DONME4: {    ** Industry **
 		COSTS: {
 			CIVIC_GOV: 30,
 		},
-	    AI_BLOCKED: 1,
 		LEVEL_MAX: 1,
 		REQUIRES_TECH_LEVEL: {
-			DON00: 1,
+			DONPR1: 1,
 		},
 		BOOST: {
             ROOM_REFINER_SMELTER>MUL: 1.3,
@@ -187,17 +176,16 @@ TECHS: {
 		ICON: 32->TECH_RACE->42,
 	},
 
-  ** Monorace **
+  **--Monorace-------------------------------------**
 
-	DON04: {    ** Bastion of Order **
+	DONMO1: {    ** Bastion of Order **
 		COSTS: {
 			CIVIC_GOV: 10,
 		},
-	    AI_BLOCKED: 1,
 		LEVEL_MAX: 6,
 		LEVEL_COST_INC: 10,
 		REQUIRES_TECH_LEVEL: {
-			DON00: 1,
+			DONPR1: 1,
 		},
 		REQUIRES: {
 		    EQUAL: {

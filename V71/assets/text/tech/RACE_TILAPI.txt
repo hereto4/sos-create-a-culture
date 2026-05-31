@@ -3,29 +3,29 @@ TECHS: {
 
   ** Presences **
 
-    TIL00: {
+    TILPR1: {
         NAME: "Tilapi Band",
         DESC: "MINOR PRESENCE | "Tilapis, the Nature Guardians, are the Astarii's lithe protectors of the forest, as harmonious and merciless as nature itself. A small band of Tilapis has settled in our city; judgemental and distrustful, our citizens fear them... but so too do any would-be invaders."",
     },
-    TIL10: {
+    TILPR2: {
         NAME: "Tilapi Circle",
         DESC: "MODERATE PRESENCE | "Several Tilapi bands have settled into an intermingling of trees and houses, their modest huts covered in flowery vines. Most avoid our citizens by tending to the flora outside the city walls, though a few have been secretly watering our citizen's gardens in the dead of night."",
     },
-    TIL20: {
+    TILPR3: {
         NAME: "Tilapi Realm",
         DESC: "MAJOR PRESENCE | "The Tilapis are the unseen guardians of our city; forest rangers scouting the land for invaders, striking down raiders long before they reach our walls. Though our citizens remain wary of their cold demeanour and deadly skill, they sleep sound at night knowing our city is under the protection of these forest guardians."",
     },
 
   ** Focuses **
 
-    TIL01: {
+    TILFO1: {
         NAME: "Apex Hunters",
         DESC: "FOCUS | "We will encourage the Tilapi's role as savage manhunters and feared guardians of the forest."
 ---
 [!] Affects ONLY Tilapi subjects.
 ",
     },
-    TIL11: {
+    TILFO2: {
         NAME: "Syncretic Druids",
         DESC: "FOCUS | "We will encourage the Tilapi's connection to the natural world; their Astarii-given affinity for the forests of Syx."
 ---
@@ -35,26 +35,26 @@ TECHS: {
 
   ** Memes **
 
-    TIL02: {
+    TILME1: {
         NAME: "Determent",
         DESC: "MEME | "Our culture will integrate the Tilapi's god-given mandate to drive off all intruders through terror and violent demonstration."",
     },
-    TIL12: {
+    TILME2: {
         NAME: "Savagery",
         DESC: "MEME | "Our culture will integrate the Tilapi's killing instinct; their animalistic thirst for blood and death."",
     },
-    TIL03: {
+    TILME3: {
         NAME: "Animal Kinship",
         DESC: "MEME | "Our culture will integrate the Tilapi's deep connection to wildlife; their spiritual bond with the animals of Syx."",
     },
-    TIL13: {
+    TILME4: {
         NAME: "Ecocentrism",
         DESC: "MEME | "Our culture will integrate the Tilapi's naturalistic lifestyle; their preference for an organic environment free of soulless iron."",
     },
 
   ** Monorace **
 
-    TIL04: {
+    TILMO1: {
         NAME: "Shadows in the Forest",
         DESC: "MONORACE FOCUS | "We have not forgotten the purpose of our creation, to stand vigil between lands divine and forbidden. We will embrace our ancient mandate once more and reclaim the wilds of Syx! The mortal races will once again fear stepping into the forests, lest they never return...."
 ---

@@ -1,25 +1,24 @@
-TREE: { ** tech id format = NAMYX (Name, X (Column), X (Row)  **
-
-    **    0     1     3     **
-	0: [CRE00,CRE10,CRE20,],  ** Presences
-	1: [CRE01,CRE11,_____,],  ** Focuses
-	2: [CRE02,CRE12,_____,],  ** Memes 1-2
-	3: [CRE03,CRE13,_____,],  ** Memes 3-4
-	4: [CRE04,_____,_____,],  ** Monorace
+TREE: {
+    **     1      2      3      4      5      6      7
+	1: [CREPR1,CREPR2,CREPR3,______,______,______,______,],
+	2: [______,______,______,______,______,______,______,],
+	3: [______,CREFO1,CREFO2,CREMO1,______,______,______,],
+	4: [______,______,______,______,______,______,______,],
+	5: [______,CREME1,CREME2,CREME3,CREME4,______,______,],
 },
 
-CATEGORY: 99,
 COLOR: 0_148_255,
+CATEGORY: 999,
+ICON: 32->TECH_RACE->1,
 
 TECHS: {
 
-  ** Presences **
+  **--Presences-------------------------------------**
 
-	CRE00: {
-	    COSTS: {
-	    },
-	    AI_BLOCKED: 1,
+	CREPR1: {
+	    COSTS: {},
 	    LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {},
 		REQUIRES: {
 			GREATERE: {
 				POPULATION_CRETONIAN_CITIZEN_I: 50,
@@ -31,13 +30,11 @@ TECHS: {
 	    },
 	    ICON: 32->TECH_RACE->1,
 	},
-	CRE10: {
-	    COSTS: {
-	    },
-	    AI_BLOCKED: 1,
+	CREPR2: {
+	    COSTS: {},
 		LEVEL_MAX: 1,
 		REQUIRES_TECH_LEVEL: {
-			CRE00: 1,
+			CREPR1: 1,
 		},
 		REQUIRES: {
 			GREATERE: {
@@ -50,13 +47,11 @@ TECHS: {
 	    },
 	    ICON: 32->TECH_RACE->22,
 	},
-	CRE20: {
-	    COSTS: {
-	    },
-	    AI_BLOCKED: 1,
+	CREPR3: {
+	    COSTS: {},
 		LEVEL_MAX: 1,
 		REQUIRES_TECH_LEVEL: {
-			CRE10: 1,
+			CREPR2: 1,
 		},
 		REQUIRES: {
 			GREATERE: {
@@ -70,17 +65,16 @@ TECHS: {
 	    ICON: 32->TECH_RACE->23,
 	},
 
-  ** Focuses **
+  **--Focuses-------------------------------------**
 
-	CRE01: {    ** Land of Plenty **
+	CREFO1: {    ** Land of Plenty **
 		COSTS: {
 			CIVIC_GOV: 5,
 		},
-	    AI_BLOCKED: 1,
 		LEVEL_MAX: 3,
 		LEVEL_COST_INC: 5,
 		REQUIRES_TECH_LEVEL: {
-			CRE00: 1,
+			CREPR1: 1,
 		},
 		TARGET_RACE: CRETONIAN,
         BOOST: {
@@ -93,15 +87,14 @@ TECHS: {
         },
         ICON: 32->TECH_RACE->9,
 	},
-	CRE11: {    ** Warm Hearths **
+	CREFO2: {    ** Warm Hearths **
 		COSTS: {
 			CIVIC_GOV: 5,
 		},
-	    AI_BLOCKED: 1,
 		LEVEL_MAX: 3,
 		LEVEL_COST_INC: 5,
 		REQUIRES_TECH_LEVEL: {
-			CRE00: 1,
+			CREPR1: 1,
 		},
 		TARGET_RACE: CRETONIAN,
         BOOST: {
@@ -115,16 +108,15 @@ TECHS: {
         ICON: 32->TECH_RACE->9,
 	},
 
-  ** Memes **
+  **--Memes-------------------------------------**
 
-	CRE02: {    ** Agrarian **
+	CREME1: {    ** Agrarian **
 		COSTS: {
 			CIVIC_GOV: 30,
 		},
-	    AI_BLOCKED: 1,
 		LEVEL_MAX: 1,
 		REQUIRES_TECH_LEVEL: {
-			CRE00: 1,
+			CREPR1: 1,
 		},
         BOOST: {
             ROOM_FARM_GRAIN>MUL: 1.3,
@@ -134,14 +126,14 @@ TECHS: {
         },
         ICON: 32->TECH_RACE->17,
 	},
-	CRE12: {    ** Creature Comforts **
+	CREME2: {    ** Creature Comforts **
 		COSTS: {
 			CIVIC_GOV: 30,
 		},
-	    AI_BLOCKED: 1,
+	    
 		LEVEL_MAX: 1,
 		REQUIRES_TECH_LEVEL: {
-			CRE00: 1,
+			CREPR1: 1,
 		},
         BOOST: {
             ROOM_REFINER_BAKERY>MUL: 1.3,
@@ -151,14 +143,13 @@ TECHS: {
         },
         ICON: 32->TECH_RACE->25,
 	},
-	CRE03: {    ** Family Ties **
+	CREME3: {    ** Family Ties **
 		COSTS: {
 			CIVIC_GOV: 30,
 		},
-	    AI_BLOCKED: 1,
 		LEVEL_MAX: 1,
 		REQUIRES_TECH_LEVEL: {
-			CRE00: 1,
+			CREPR1: 1,
 		},
         BOOST: {
             ROOM_LIBRARY_NORMAL>MUL: 1.3,
@@ -169,14 +160,13 @@ TECHS: {
         },
         ICON: 32->TECH_RACE->33,
 	},
-	CRE13: {    ** Pacifism **
+	CREME4: {    ** Pacifism **
 		COSTS: {
 			CIVIC_GOV: 30,
 		},
-	    AI_BLOCKED: 1,
 		LEVEL_MAX: 1,
 		REQUIRES_TECH_LEVEL: {
-			CRE00: 1,
+			CREPR1: 1,
 		},
         BOOST: {
             BEHAVIOUR_HAPPINESS>MUL: 1.3,
@@ -187,17 +177,16 @@ TECHS: {
         ICON: 32->TECH_RACE->41,
 	},
 
-  ** Monorace **
+  **--Monorace-------------------------------------**
 
-	CRE04: {    ** Stronger Together **
+	CREMO1: {    ** Stronger Together **
 		COSTS: {
 			CIVIC_GOV: 10,
 		},
-	    AI_BLOCKED: 1,
 		LEVEL_MAX: 6,
 		LEVEL_COST_INC: 10,
 		REQUIRES_TECH_LEVEL: {
-			CRE00: 1,
+			CREPR1: 1,
 		},
 		REQUIRES: {
 			EQUAL: {

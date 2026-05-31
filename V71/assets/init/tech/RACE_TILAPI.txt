@@ -1,0 +1,204 @@
+TREE: {
+    **     1      2      3      4      5      6      7
+	1: [TILPR1,TILPR2,TILPR3,______,______,______,______,],
+	2: [______,______,______,______,______,______,______,],
+	3: [______,TILFO1,TILFO2,TILMO1,______,______,______,],
+	4: [______,______,______,______,______,______,______,],
+	5: [______,TILME1,TILME2,TILME3,TILME4,______,______,],
+},
+
+COLOR: 0_148_255,
+CATEGORY: 999,
+ICON: 32->TECH_RACE->5,
+
+TECHS: {
+
+  **--Presences-------------------------------------**
+
+	TILPR1: {
+	    COSTS: {},
+	    LEVEL_MAX: 1,
+	    REQUIRES_TECH_LEVEL: {},    
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_TILAPI_CITIZEN_I: 50,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 15,
+		    CIVIC_RAIDING>MUL: 1.05,
+	    },
+	    ICON: 32->TECH_RACE->5,
+	},
+	TILPR2: {
+	    COSTS: {},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			TILPR1: 1,
+		},
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_TILAPI_CITIZEN_I: 300,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 30,
+		    ROOM_ORCHARD_FRUIT>MUL: 1.05,
+	    },
+	    ICON: 32->TECH_RACE->54,
+	},
+	TILPR3: {
+	    COSTS: {},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			TILPR2: 1,
+		},
+		REQUIRES: {
+			GREATERE: {
+				POPULATION_TILAPI_CITIZEN_I: 900,
+			},
+		},
+		BOOST: {
+		    CIVIC_GOV>ADD: 60,
+		    BEHAVIOUR_SANITY>MUL: 1.05,
+	    },
+	    ICON: 32->TECH_RACE->55,
+	},
+
+  **--Focuses-------------------------------------**
+
+	TILFO1: {    ** Apex Hunters **
+		COSTS: {
+			CIVIC_GOV: 5,
+		},
+		LEVEL_MAX: 3,
+		LEVEL_COST_INC: 5,
+		REQUIRES_TECH_LEVEL: {
+			TILPR1: 1,
+		},
+		TARGET_RACE: TILAPI,
+        BOOST: {
+            BATTLE_DEXTERITY>MUL: 1.1,
+            BATTLE_RANGED_BOW>MUL: 1.1,
+            ROOM_HUNTER_NORMAL>MUL: 1.1,
+            ROOM_FARM_GRAIN>MUL: 0.9,
+            ROOM_FARM_COTTON>MUL: 0.9,
+        },
+        ICON: 32->TECH_RACE->13,
+	},
+	TILFO2: {    ** Syncretic Druids **
+		COSTS: {
+			CIVIC_GOV: 5,
+		},
+		LEVEL_MAX: 3,
+		LEVEL_COST_INC: 5,
+		REQUIRES_TECH_LEVEL: {
+			TILPR1: 1,
+		},
+		TARGET_RACE: TILAPI,
+        BOOST: {
+            BEHAVIOUR_SANITY>MUL: 1.1,
+            PHYSICS_HEALTH>MUL: 1.1,
+            ROOM_ORCHARD_FRUIT>MUL: 1.1,
+            ROOM_MINE_COAL>MUL: 0.9,
+            ROOM_MINE_ORE>MUL: 0.9,
+        },
+        ICON: 32->TECH_RACE->13,
+	},
+
+  **--Memes-------------------------------------**
+
+	TILME1: {    ** Determent **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			TILPR1: 1,
+		},
+        BOOST: {
+            CIVIC_RAIDING>MUL: 1.3,
+            PHYSICS_SPEED>MUL: 1.3,
+            BATTLE_RANGED_BOW>MUL: 1.3,
+            CIVIC_IMMIGRATION>MUL: 0.7,
+        },
+        ICON: 32->TECH_RACE->21,
+	},
+	TILME2: {    ** Savagery **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			TILPR1: 1,
+		},
+        BOOST: {
+            BATTLE_DEXTERITY>MUL: 1.3,
+            BATTLE_OFFENCE_SKILL>MUL: 1.3,
+            ROOM_HUNTER_NORMAL>MUL: 1.3,
+            BATTLE_FORMATION_SKILL>MUL: 0.7,
+        },
+        ICON: 32->TECH_RACE->29,
+	},
+	TILME3: {    ** Animal Kinship **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			TILPR1: 1,
+		},
+        BOOST: {
+            ROOM_PASTURE_AUR>MUL: 1.3,
+            ROOM_PASTURE_ENT>MUL: 1.3,
+            ROOM_PASTURE_ONX>MUL: 1.3,
+            PHYSICS_SOILING>MUL: 1.3,
+        },
+        ICON: 32->TECH_RACE->37,
+	},
+	TILME4: {    ** Ecocentrism **
+		COSTS: {
+			CIVIC_GOV: 30,
+		},
+		LEVEL_MAX: 1,
+		REQUIRES_TECH_LEVEL: {
+			TILPR1: 1,
+		},
+        BOOST: {
+            ROOM_ORCHARD_FRUIT>MUL: 1.3,
+            BEHAVIOUR_SANITY>MUL: 1.3,
+            ROOM_WOODCUTTER>MUL: 1.3,
+            ROOM_REFINER_SMELTER>MUL: 0.7,
+        },
+        ICON: 32->TECH_RACE->45,
+	},
+
+  **--Monorace-------------------------------------**
+
+	TILMO1: {    ** Scourge of the Forest **
+		COSTS: {
+			CIVIC_GOV: 10,
+		},
+		LEVEL_MAX: 6,
+		LEVEL_COST_INC: 10,
+		REQUIRES_TECH_LEVEL: {
+			TILPR1: 1,
+		},
+		REQUIRES: {
+		    EQUAL: {
+		        POPULATION_TILAPI_CITIZEN_F: 1.0,
+		    },
+		},
+        BOOST: {
+            CIVIC_RAIDING>MUL: 1.15,
+            BATTLE_DEXTERITY>MUL: 1.1,
+            ROOM_ARCHERY_VANILLA>MUL: 1.1,
+            PHYSICS_SPEED>MUL: 1.1,
+            ROOM_EMBASSY>MUL: 0.85,
+            CIVIC_OPINION>MUL: 0.9,
+            CIVIC_IMMIGRATION>MUL: 0.9,
+        },
+        ICON: 32->TECH_RACE->53,
+	},
+
+},
