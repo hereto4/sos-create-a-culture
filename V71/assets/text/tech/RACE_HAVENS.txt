@@ -1,0 +1,80 @@
+NAME: "Haven Cultures",
+TECHS: {
+
+**--Cantor--------------------------------------------------------------------------**
+
+  **--Presences------------------------------------**
+
+    CANPR1: {
+        NAME: "CANTOR TechName",
+        DESC: "HAVEN PRESENCE | "CANTOR, the XSUBTITLE, ."",
+    },
+
+  **--Focuses------------------------------------**
+
+    CANFO1: {
+        NAME: "TechName",
+        DESC: "FOCUS | "We will encourage the CANTOR's ."",
+    },
+    CANFO2: {
+        NAME: "TechName",
+        DESC: "FOCUS | "We will encourage the CANTOR's ."",
+    },
+
+  **--Synergies------------------------------------**
+
+    CANSY1: {
+        NAME: "TechName",
+        DESC: "SYNERGY FOCUS | "."
+[!] REQUIRES a Major Presence of CANTOR and XOTHERRACE.",
+    },
+    CANSY2: {
+        NAME: "TechName",
+        DESC: "SYNERGY FOCUS | "."
+[!] REQUIRES a Major Presence of CANTOR and XOTHERRACE.",
+    },
+
+**--Argonosh--------------------------------------------------------------------------**
+
+  **--Presences------------------------------------**
+
+    ARGPR1: {
+        NAME: "ARGONOSH TechName",
+        DESC: "HAVEN PRESENCE | "ARGONOSH, the XSUBTITLE, ."",
+    },
+
+  **--Focuses------------------------------------**
+
+    ARGFO1: {
+        NAME: "TechName",
+        DESC: "FOCUS | "We will encourage the ARGONOSH's ."",
+    },
+    ARGFO2: {
+        NAME: "TechName",
+        DESC: "FOCUS | "We will encourage the ARGONOSH's ."",
+    },
+
+  **--Synergies------------------------------------**
+
+    ARGSY1: {
+        NAME: "TechName",
+        DESC: "SYNERGY FOCUS | "."
+[!] REQUIRES a Major Presence of ARGONOSH and XOTHERRACE.",
+    },
+    ARGSY2: {
+        NAME: "TechName",
+        DESC: "SYNERGY FOCUS | "."
+[!] REQUIRES a Major Presence of ARGONOSH and XOTHERRACE.",
+    },
+
+**--All Haven Races--------------------------------------------------------------------------**
+
+  **--Synergy------------------------------------**
+
+    HAVSY1: {
+        NAME: "TechName",
+        DESC: "SYNERGY FOCUS | "."
+[!] REQUIRES a Haven Presence of CANTOR and ARGONOSH.",
+    },
+
+},
