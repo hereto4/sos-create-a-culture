@@ -1,0 +1,65 @@
+NAME: "XRACE Culture",
+TECHS: {
+
+  **--Presences------------------------------------**
+
+    XIDPR1: {
+        NAME: "XRACE TechName",
+        DESC: "MINOR PRESENCE | "XRACE, the XSUBTITLE, ."",
+    },
+    XIDPR2: {
+        NAME: "XRACE TechName",
+        DESC: "MODERATE PRESENCE | "."",
+    },
+    XIDPR3: {
+        NAME: "XRACE TechName",
+        DESC: "MAJOR PRESENCE | "."",
+    },
+
+  **--Focuses------------------------------------**
+
+    XIDFO1: {
+        NAME: "TechName",
+        DESC: "FOCUS | "We will encourage the XRACE's ."",
+    },
+    XIDFO2: {
+        NAME: "TechName",
+        DESC: "FOCUS | "We will encourage the XRACE's ."",
+    },
+
+  **--Memes------------------------------------**
+
+    XIDME1: {
+        NAME: "TechName",
+        DESC: "MEME | "Our culture will integrate the XRACE's ."",
+    },
+    XIDME2: {
+        NAME: "TechName",
+        DESC: "MEME | "Our culture will integrate the XRACE's ."",
+    },
+    XIDME3: {
+        NAME: "TechName",
+        DESC: "MEME | "Our culture will integrate the XRACE's ."",
+    },
+    XIDME4: {
+        NAME: "TechName",
+        DESC: "MEME | "Our culture will integrate the XRACE's ."",
+    },
+
+  **--Monorace------------------------------------**
+
+    XIDMO1: {
+        NAME: "TechName",
+        DESC: "MONORACE FOCUS | "."
+[!] REQUIRES all non-slave Citizens to be XRACE-only.",
+    },
+
+  **--Synergy------------------------------------**
+
+    XIDSY1: {
+        NAME: "TechName",
+        DESC: "SYNERGY FOCUS | "."
+[!] REQUIRES a Major Presence of XRACE and XOTHERRACE.",
+    },
+
+},
