@@ -23,7 +23,7 @@ TECHS: {
 		REQUIRES_TECH_LEVEL: {},
 		REQUIRES: {
 			GREATERE: {
-				POPULATION_CANTOR_CITIZEN_I: 50,
+				POPULATION_CANTOR_CITIZEN_I: 25,
 			},
 		},
 		BOOST: {
@@ -35,7 +35,7 @@ TECHS: {
 
   **--Focuses-------------------------------------**
 
-	CANFO1: {    ** Tech Name **
+	CANFO1: {    ** Protectors of Istari **
 		COSTS: {
 			CIVIC_GOV: 5,
 		},
@@ -46,15 +46,15 @@ TECHS: {
 		},
 		TARGET_RACE: CANTOR,
         BOOST: {
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 0.9,
-            XBOOST>MUL: 0.9,
+            BATTLE_MORALE>MUL: 1.1,
+            ROOM_BARRACKS_VANILLA>MUL: 1.1,
+            ROOM_WORKSHOP_SMITHY>MUL: 1.1,
+            BEHAVIOUR_SUBMISSION>MUL: 0.9,
+            ROOM_STOCKPILE>MUL: 0.9,
         },
         ICON: 32->TECH_RACE->9,
 	},
-	CANFO2: {    ** Tech Name **
+	CANFO2: {    ** Sculptures of Athuri **
 		COSTS: {
 			CIVIC_GOV: 5,
 		},
@@ -65,18 +65,18 @@ TECHS: {
 		},
 		TARGET_RACE: CANTOR,
         BOOST: {
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 0.9,
-            XBOOST>MUL: 0.9,
+            ROOM_MINE_STONE>MUL: 1.1,
+            ROOM_MINE_SITHILON>MUL: 1.1,
+            ROOM_WORKSHOP_MASON>MUL: 1.1,
+            BATTLE_MORALE>MUL: 0.9,
+            ROOM_BARRACKS_VANILLA>MUL: 0.9,
         },
         ICON: 32->TECH_RACE->9,
 	},
 
   **--Synergies------------------------------------**
 
-	CANSY1: {    ** Tech Name **
+	CANSY1: {    ** Return from Extinction **
 		COSTS: {
 			CIVIC_GOV: 10,
 		},
@@ -87,22 +87,23 @@ TECHS: {
 		},
 		REQUIRES: {
 		    GREATERE: {
-		        POPULATION_CANTOR_CITIZEN_I: 300,
-			    POPULATION_XOTHERRACE_CITIZEN_I: 300,
+		        POPULATION_CANTOR_CITIZEN_I: 50,
+			    POPULATION_DONDORIAN_CITIZEN_I: 300,
 		    },
 		},
+		TARGET_RACE: CANTOR,
 		BOOST: {
-            XBOOST>MUL: 1.15,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 0.85,
-            XBOOST>MUL: 0.9,
-            XBOOST>MUL: 0.9,
+            CIVIC_IMMIGRATION>ADD: 10,
+            BEHAVIOUR_HAPPINESS>MUL: 1.1,
+            ROOM_LIBRARY_NORMAL>MUL: 2,
+            CIVIC_OPINION>MUL: 1.1,
+            ROOM_MINE_STONE>MUL: 0.85,
+            ROOM_MINE_ORE>MUL: 0.9,
+            ROOM_MINE_CLAY >MUL: 0.9,
 		},
 		ICON: 32->TECH_RACE->50,
 	},
-	CANSY2: {    ** Tech Name **
+	CANSY2: {    ** An Ancient Foe, Spirit Broken **
 		COSTS: {
 			CIVIC_GOV: 10,
 		},
@@ -113,18 +114,19 @@ TECHS: {
 		},
 		REQUIRES: {
 		    GREATERE: {
-		        POPULATION_CANTOR_CITIZEN_I: 300,
-			    POPULATION_XOTHERRACE_CITIZEN_I: 300,
+		        POPULATION_CANTOR_SLAVE_I: 50,
+			    POPULATION_HUMAN_CITIZEN_F: 0.5,
 		    },
 		},
+		TARGET_RACE: CANTOR,
 		BOOST: {
-            XBOOST>MUL: 1.15,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 0.85,
-            XBOOST>MUL: 0.9,
-            XBOOST>MUL: 0.9,
+            BEHAVIOUR_SUBMISSION>MUL: 1.15,
+            ROOM_MINE_STONE>MUL: 1.1,
+            PHYSICS_SPEED>MUL: 1.1,
+            ROOM_STOCKPILE>MUL: 1.1,
+            BATTLE_MORALE>MUL: 0.85,
+            BEHAVIOUR_HAPPINESS>MUL: 0.9,
+            BATTLE_DEFENCE_SKILL>MUL: 0.9,
 		},
 		ICON: 32->TECH_RACE->50,
 	},
@@ -139,7 +141,7 @@ TECHS: {
 		REQUIRES_TECH_LEVEL: {},
 		REQUIRES: {
 			GREATERE: {
-				POPULATION_ARGONOSH_CITIZEN_I: 50,
+				POPULATION_ARGONOSH_CITIZEN_I: 25,
 			},
 		},
 		BOOST: {
@@ -229,7 +231,7 @@ TECHS: {
 		},
 		REQUIRES: {
 		    GREATERE: {
-		        POPULATION_ARGONOSH_CITIZEN_I: 300,
+		        POPULATION_ARGONOSH_CITIZEN_I: 50,
 			    POPULATION_XOTHERRACE_CITIZEN_I: 300,
 		    },
 		},
@@ -261,8 +263,8 @@ TECHS: {
 		},
 		REQUIRES: {
 		    GREATERE: {
-		        POPULATION_ARGONOSH_CITIZEN_I: 300,
-			    POPULATION_CANTOR_CITIZEN_I: 300,
+		        POPULATION_ARGONOSH_CITIZEN_I: 25,
+			    POPULATION_CANTOR_CITIZEN_I: 25,
 		    },
 		},
 		BOOST: {
