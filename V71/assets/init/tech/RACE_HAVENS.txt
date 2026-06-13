@@ -30,7 +30,7 @@ TECHS: {
 		    CIVIC_GOV>ADD: 15,
 		    XBOOST>MUL: 1.05,
 	    },
-	    ICON: 32->TECH_RACE->1,
+	    ICON: 32->TECH_RACE_CANTOR->1,
 	},
 
   **--Focuses-------------------------------------**
@@ -71,7 +71,7 @@ TECHS: {
             BATTLE_MORALE>MUL: 0.9,
             ROOM_BARRACKS_VANILLA>MUL: 0.9,
         },
-        ICON: 32->TECH_RACE->9,
+        ICON: 32->TECH_RACE_CANTOR->9,
 	},
 
   **--Synergies------------------------------------**
@@ -101,7 +101,7 @@ TECHS: {
             ROOM_MINE_ORE>MUL: 0.9,
             ROOM_MINE_CLAY >MUL: 0.9,
 		},
-		ICON: 32->TECH_RACE->50,
+		ICON: 32->TECH_RACE_CANTOR->50,
 	},
 	CANSY2: {    ** An Ancient Foe, Spirit Broken **
 		COSTS: {
@@ -128,7 +128,7 @@ TECHS: {
             BEHAVIOUR_HAPPINESS>MUL: 0.9,
             BATTLE_DEFENCE_SKILL>MUL: 0.9,
 		},
-		ICON: 32->TECH_RACE->50,
+		ICON: 32->TECH_RACE_CANTOR->50,
 	},
 	
 **--Argonosh--------------------------------------------------------------------------**
@@ -148,7 +148,7 @@ TECHS: {
 		    CIVIC_GOV>ADD: 15,
 		    XBOOST>MUL: 1.05,
 	    },
-	    ICON: 32->TECH_RACE->1,
+	    ICON: 32->TECH_RACE_ARGONOSH->1,
 	},
 
   **--Focuses-------------------------------------**
@@ -189,7 +189,7 @@ TECHS: {
             XBOOST>MUL: 0.9,
             XBOOST>MUL: 0.9,
         },
-        ICON: 32->TECH_RACE->9,
+        ICON: 32->TECH_RACE_ARGONOSH->9,
 	},
 
   **--Synergies------------------------------------**
@@ -218,7 +218,7 @@ TECHS: {
             XBOOST>MUL: 0.9,
             XBOOST>MUL: 0.9,
 		},
-		ICON: 32->TECH_RACE->50,
+		ICON: 32->TECH_RACE_ARGONOSH->50,
 	},
 	ARGSY2: {    ** Tech Name **
 		COSTS: {
@@ -244,7 +244,7 @@ TECHS: {
             XBOOST>MUL: 0.9,
             XBOOST>MUL: 0.9,
 		},
-		ICON: 32->TECH_RACE->50,
+		ICON: 32->TECH_RACE_ARGONOSH->50,
 	},
 
 **--All Haven Races--------------------------------------------------------------------------**
