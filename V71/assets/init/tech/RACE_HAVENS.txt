@@ -23,7 +23,7 @@ TECHS: {
 		REQUIRES_TECH_LEVEL: {},
 		REQUIRES: {
 			GREATERE: {
-				POPULATION_CANTOR_CITIZEN_I: 25,
+				POPULATION__CANTOR_I: 25,
 			},
 		},
 		BOOST: {
@@ -99,7 +99,7 @@ TECHS: {
             CIVIC_OPINION>MUL: 1.1,
             ROOM_MINE_ALL>MUL: 0.85,
             ROOM_REFINER_ALL>MUL: 0.9,
-            ROOM_WORKSHOP_ALL>MUL: 0.9,
+            ROOM_FARM_ALL>MUL: 0.9,
 		},
 		ICON: 32->TECH_RACE_CANTOR->49,
 	},
@@ -121,12 +121,12 @@ TECHS: {
 		TARGET_RACE: CANTOR,
 		BOOST: {
             BEHAVIOUR_SUBMISSION>MUL: 1.15,
-            ROOM_MINE_STONE>MUL: 1.1,
+            ROOM_MINE_ALL>MUL: 1.1,
             PHYSICS_SPEED>MUL: 1.1,
             ROOM_STOCKPILE>MUL: 1.1,
             BATTLE_MORALE>MUL: 0.85,
             BEHAVIOUR_HAPPINESS>MUL: 0.9,
-            BATTLE_DEFENCE_SKILL>MUL: 0.9,
+            ROOM_WORKSHOP_ALL>MUL: 0.9,
 		},
 		ICON: 32->TECH_RACE_CANTOR->49,
 	},
@@ -141,7 +141,7 @@ TECHS: {
 		REQUIRES_TECH_LEVEL: {},
 		REQUIRES: {
 			GREATERE: {
-				POPULATION_ARGONOSH_CITIZEN_I: 25,
+				POPULATION_ARGONOSH__I: 25,
 				BOOST_RELIGION_SHMALOR_CITY>MUL: 1.15,
 			},
 		},
@@ -164,15 +164,15 @@ TECHS: {
 		},
 		TARGET_RACE: ARGONOSH,
         BOOST: {
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 1.1,
+            BATTLE_FEAR>ADD: 0.1,
+            BATTLE_CHARGE>MUL: 1.1,
             BATTLE_OFFENCE_SKILL>MUL: 1.1,
-            BEHAVIOUR_LAW>MUL: 0.9,
-            CIVIC_OPINION>MUL: 0.9,
+            BATTLE_FORMATION_SKILL>MUL: 0.9,
+            ROOM_BARRACKS_VANILLA>MUL: 0.9,
         },
         ICON: 32->TECH_RACE->8,
 	},
-	ARGFO2: {    ** The Perfect Predator **
+	ARGFO2: {    ** Weaponized Abominations **
 		COSTS: {
 			CIVIC_GOV: 5,
 		},
@@ -183,18 +183,17 @@ TECHS: {
 		},
 		TARGET_RACE: ARGONOSH,
         BOOST: {
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 0.9,
-            XBOOST>MUL: 0.9,
+            BEHAVIOUR_SUBMISSION>MUL: 1.1,
+            ROOM_BARRACKS_VANILLA>MUL: 1.1,
+            BATTLE_FEAR>ADD: 0.1,
+            BATTLE_MORALE>MUL: 0.8,
         },
         ICON: 32->TECH_RACE_ARGONOSH->8,
 	},
 
   **--Synergies------------------------------------**
 
-	ARGSY1: {    ** Return of the Spider Goddess **
+	ARGSY1: {    ** An Ancient Alliance **
 		COSTS: {
 			CIVIC_GOV: 10,
 		},
@@ -205,23 +204,24 @@ TECHS: {
 		},
 		REQUIRES: {
 		    GREATERE: {
-		        POPULATION_ARGONOSH_CITIZEN_I: 50,
-			    POPULATION_GARTHIMI_CITIZEN_I: 2000,
-			    RELIGION_SHMALOR_F: 90,
+		        POPULATION_ARGONOSH__I: 50,
+			    POPULATION_HUMAN_CITIZEN_F: 0.5,
+			    RELIGION_AMINION_F: 90,
 		    },
 		},
+		TARGET_RACE: ARGONOSH, HUMAN,
 		BOOST: {
-            PHYSICS_REPRODUCTION_SPEED>ADD: 10,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 0.85,
-            XBOOST>MUL: 0.9,
-            XBOOST>MUL: 0.9,
+            CIVIC_INDOCTRINATION>MUL: 1.15,
+            CIVIC_PLUNDER>MUL: 1.1,
+            WORLD_CONSCRIPTABLE_TARGET>MUL: 1.1,
+            BATTLE_FEAR>ADD: 0.1,
+            CIVIC_TRUST>MUL: 0.85,
+            CIVIC_OPINION>MUL: 0.9,
+            BEHAVIOUR_LAW>MUL: 0.9,
 		},
 		ICON: 32->TECH_RACE_ARGONOSH->49,
 	},
-	ARGSY2: {    ** Tame the Nightmare Spawn **
+	ARGSY2: {    ** Unholy Symbiosis **
 		COSTS: {
 			CIVIC_GOV: 10,
 		},
@@ -233,16 +233,18 @@ TECHS: {
 		REQUIRES: {
 		    GREATERE: {
 		        POPULATION_ARGONOSH_CITIZEN_I: 50,
-			    POPULATION_XOTHERRACE_CITIZEN_I: 300,
+			    POPULATION_GARTHIMI_CITIZEN_F: 0.5,
+			    RELIGION_SHMALOR_F: 90,
 		    },
 		},
+		TARGET_RACE: ARGONOSH, GARTHIMI,
 		BOOST: {
-            BEHAVIOUR_SUBMISSION>MUL: 1.15,
-            ROOM_STOCKPILE>MUL: 1.1,
-            XBOOST>MUL: 1.1,
+            PHYSICS_REPRODUCTION_SPEED>ADD: 0.15,
+            PHYSICS_MASS>MUL: 1.1,
+            PHYSICS_DEATH_AGE>MUL: 1.1,
             XBOOST>MUL: 1.1,
             XBOOST>MUL: 0.85,
-            XBOOST>MUL: 0.9,
+            CIVIC_OPINION>MUL: 0.9,
             XBOOST>MUL: 0.9,
 		},
 		ICON: 32->TECH_RACE_ARGONOSH->49,
