@@ -28,14 +28,14 @@ TECHS: {
 		},
 		BOOST: {
 		    CIVIC_GOV>ADD: 15,
-		    XBOOST>MUL: 1.05,
+		    RELIGION_ATHURI_CITY>MUL: 1.15,
 	    },
-	    ICON: 32->TECH_RACE_CANTOR->1,
+	    ICON: 32->TECH_RACE_CANTOR->0,
 	},
 
   **--Focuses-------------------------------------**
 
-	CANFO1: {    ** Protectors of Istari **
+	CANFO1: {    ** Protectors of Istarii **
 		COSTS: {
 			CIVIC_GOV: 5,
 		},
@@ -52,7 +52,7 @@ TECHS: {
             BEHAVIOUR_SUBMISSION>MUL: 0.9,
             ROOM_STOCKPILE>MUL: 0.9,
         },
-        ICON: 32->TECH_RACE->9,
+        ICON: 32->TECH_RACE->8,
 	},
 	CANFO2: {    ** Sculptures of Athuri **
 		COSTS: {
@@ -71,7 +71,7 @@ TECHS: {
             BATTLE_MORALE>MUL: 0.9,
             ROOM_BARRACKS_VANILLA>MUL: 0.9,
         },
-        ICON: 32->TECH_RACE_CANTOR->9,
+        ICON: 32->TECH_RACE_CANTOR->8,
 	},
 
   **--Synergies------------------------------------**
@@ -88,20 +88,20 @@ TECHS: {
 		REQUIRES: {
 		    GREATERE: {
 		        POPULATION_CANTOR_CITIZEN_I: 50,
-			    POPULATION_DONDORIAN_CITIZEN_I: 900,
+			    POPULATION_DONDORIAN_CITIZEN_I: 2000,
 		    },
 		},
 		TARGET_RACE: CANTOR,
 		BOOST: {
-            CIVIC_IMMIGRATION>ADD: 10,
+            CIVIC_IMMIGRATION>ADD: 0.15,
             BEHAVIOUR_HAPPINESS>MUL: 1.1,
-            ROOM_LIBRARY_NORMAL>MUL: 2,
+            CIVIC_KNOWLEDGE>ADD: 10,
             CIVIC_OPINION>MUL: 1.1,
-            ROOM_MINE_STONE>MUL: 0.85,
-            ROOM_MINE_ORE>MUL: 0.9,
-            ROOM_MINE_CLAY >MUL: 0.9,
+            ROOM_MINE_ALL>MUL: 0.85,
+            ROOM_REFINER_ALL>MUL: 0.9,
+            ROOM_WORKSHOP_ALL>MUL: 0.9,
 		},
-		ICON: 32->TECH_RACE_CANTOR->50,
+		ICON: 32->TECH_RACE_CANTOR->49,
 	},
 	CANSY2: {    ** An Ancient Foe, Spirit Broken **
 		COSTS: {
@@ -128,7 +128,7 @@ TECHS: {
             BEHAVIOUR_HAPPINESS>MUL: 0.9,
             BATTLE_DEFENCE_SKILL>MUL: 0.9,
 		},
-		ICON: 32->TECH_RACE_CANTOR->50,
+		ICON: 32->TECH_RACE_CANTOR->49,
 	},
 	
 **--Argonosh--------------------------------------------------------------------------**
@@ -142,18 +142,18 @@ TECHS: {
 		REQUIRES: {
 			GREATERE: {
 				POPULATION_ARGONOSH_CITIZEN_I: 25,
+				BOOST_RELIGION_SHMALOR_CITY>MUL: 1.15,
 			},
 		},
 		BOOST: {
 		    CIVIC_GOV>ADD: 15,
-		    XBOOST>MUL: 1.05,
 	    },
-	    ICON: 32->TECH_RACE_ARGONOSH->1,
+	    ICON: 32->TECH_RACE_ARGONOSH->0,
 	},
 
   **--Focuses-------------------------------------**
 
-	ARGFO1: {    ** Tech Name **
+	ARGFO1: {    ** Children of Chaos **
 		COSTS: {
 			CIVIC_GOV: 5,
 		},
@@ -166,13 +166,13 @@ TECHS: {
         BOOST: {
             XBOOST>MUL: 1.1,
             XBOOST>MUL: 1.1,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 0.9,
-            XBOOST>MUL: 0.9,
+            BATTLE_OFFENCE_SKILL>MUL: 1.1,
+            BEHAVIOUR_LAW>MUL: 0.9,
+            CIVIC_OPINION>MUL: 0.9,
         },
-        ICON: 32->TECH_RACE->9,
+        ICON: 32->TECH_RACE->8,
 	},
-	ARGFO2: {    ** Tech Name **
+	ARGFO2: {    ** The Perfect Predator **
 		COSTS: {
 			CIVIC_GOV: 5,
 		},
@@ -189,12 +189,12 @@ TECHS: {
             XBOOST>MUL: 0.9,
             XBOOST>MUL: 0.9,
         },
-        ICON: 32->TECH_RACE_ARGONOSH->9,
+        ICON: 32->TECH_RACE_ARGONOSH->8,
 	},
 
   **--Synergies------------------------------------**
 
-	ARGSY1: {    ** Tech Name **
+	ARGSY1: {    ** Return of the Spider Goddess **
 		COSTS: {
 			CIVIC_GOV: 10,
 		},
@@ -205,12 +205,13 @@ TECHS: {
 		},
 		REQUIRES: {
 		    GREATERE: {
-		        POPULATION_ARGONOSH_CITIZEN_I: 300,
-			    POPULATION_XOTHERRACE_CITIZEN_I: 300,
+		        POPULATION_ARGONOSH_CITIZEN_I: 50,
+			    POPULATION_GARTHIMI_CITIZEN_I: 2000,
+			    RELIGION_SHMALOR_F: 90,
 		    },
 		},
 		BOOST: {
-            XBOOST>MUL: 1.15,
+            PHYSICS_REPRODUCTION_SPEED>ADD: 10,
             XBOOST>MUL: 1.1,
             XBOOST>MUL: 1.1,
             XBOOST>MUL: 1.1,
@@ -218,9 +219,9 @@ TECHS: {
             XBOOST>MUL: 0.9,
             XBOOST>MUL: 0.9,
 		},
-		ICON: 32->TECH_RACE_ARGONOSH->50,
+		ICON: 32->TECH_RACE_ARGONOSH->49,
 	},
-	ARGSY2: {    ** Tech Name **
+	ARGSY2: {    ** Tame the Nightmare Spawn **
 		COSTS: {
 			CIVIC_GOV: 10,
 		},
@@ -236,15 +237,15 @@ TECHS: {
 		    },
 		},
 		BOOST: {
-            XBOOST>MUL: 1.15,
-            XBOOST>MUL: 1.1,
+            BEHAVIOUR_SUBMISSION>MUL: 1.15,
+            ROOM_STOCKPILE>MUL: 1.1,
             XBOOST>MUL: 1.1,
             XBOOST>MUL: 1.1,
             XBOOST>MUL: 0.85,
             XBOOST>MUL: 0.9,
             XBOOST>MUL: 0.9,
 		},
-		ICON: 32->TECH_RACE_ARGONOSH->50,
+		ICON: 32->TECH_RACE_ARGONOSH->49,
 	},
 
 **--All Haven Races--------------------------------------------------------------------------**
@@ -276,7 +277,7 @@ TECHS: {
             XBOOST>MUL: 0.9,
             XBOOST>MUL: 0.9,
 		},
-		ICON: 32->TECH_RACE->50,
+		ICON: 32->TECH_RACE->0,
 	},
 
 },
