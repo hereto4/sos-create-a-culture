@@ -186,7 +186,7 @@ TECHS: {
 		},
 		REQUIRES: {
 		    EQUAL: {
-		        POPULATION_TILAPI_CITIZEN_F: 1.0,
+		        POPULATION_TILAPI_OFCITIZEN_F: 1.0,
 		    },
 		},
         BOOST: {

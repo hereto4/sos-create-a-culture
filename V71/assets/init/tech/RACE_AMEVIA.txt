@@ -189,7 +189,7 @@ TECHS: {
 		},
 		REQUIRES: {
 		    EQUAL: {
-		        POPULATION_Q_AMEVIA_CITIZEN_F: 1.0,
+		        POPULATION_Q_AMEVIA_OFCITIZEN_F: 1.0,
 		    },
 		},
 		BOOST: {

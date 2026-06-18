@@ -186,7 +186,7 @@ TECHS: {
 		},
 		REQUIRES: {
 		    EQUAL: {
-		        POPULATION_GARTHIMI_CITIZEN_F: 1.0,
+		        POPULATION_GARTHIMI_OFCITIZEN_F: 1.0,
 		    },
 		},
         BOOST: {

@@ -189,7 +189,7 @@ TECHS: {
 		},
 		REQUIRES: {
 		    EQUAL: {
-		        POPULATION_DONDORIAN_CITIZEN_F: 1.0,
+		        POPULATION_DONDORIAN_OFCITIZEN_F: 1.0,
 		    },
 		},
 		BOOST: {

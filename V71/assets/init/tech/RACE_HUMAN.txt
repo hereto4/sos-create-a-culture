@@ -187,7 +187,7 @@ TECHS: {
 		},
 		REQUIRES: {
 		    EQUAL: {
-		        POPULATION_HUMAN_CITIZEN_F: 1.0,
+		        POPULATION_HUMAN_OFCITIZEN_F: 1.0,
 		    },
 		},
 		BOOST: {
