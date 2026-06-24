@@ -1,6 +1,10 @@
-Changelog v1.6.0 - "The Haven Races"
+Changelog v1.6.0 - "BETA: The Haven Races"
 MAJOR ADDITIONS
--
+- Haven races: Presences, Focuses, Synergies
+- implementation of new custom boostables: Plunder, Fear, Indoctrination
+FIXES
+- implementation of new custom OFCITIZEN comparator to correct for v71's function-drift of population keys
+- TARGET_RACE: AMEVIA (from Q_AMEVIA)
 
 Changelog v1.5.0 - "Game Update v71"
 v71 COMPATBILITY
