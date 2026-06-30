@@ -1,4 +1,4 @@
-Changelog v1.6.0 - "BETA: The Haven Races"
+Changelog v1.6.0 - "The Haven Races"
 MAJOR ADDITIONS
 - Haven races: Presences, Focuses, Synergies
 - implementation of new custom boostables: Plunder, Fear, Indoctrination

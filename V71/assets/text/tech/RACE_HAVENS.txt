@@ -14,11 +14,11 @@ TECHS: {
 
     CANFO1: {
         NAME: "Ancient Protectors of Istarii",
-        DESC: "FOCUS | "We will encourage the Cantor's combat prowess, of their ancient duty as protectors of the realm; towering warriors defending the divine, smiting all who oppose the Istarii's will."",
+        DESC: "FOCUS | "We will kindle the Cantor's once-legendary combat prowess, and remind them of their ancient duty as protectors of the realm."",
     },
     CANFO2: {
         NAME: "Living Sculptures of Arthuri",
-        DESC: "FOCUS | "We will remind the Cantor's ."",
+        DESC: "FOCUS | "We will encourage the application of the Cantor's perfect form: sculpted giants of impossible strength and divine precision, created by Arthuri Himself as if chiselled from stone."",
     },
 
   **--Synergies------------------------------------**
@@ -50,8 +50,8 @@ TECHS: {
         DESC: "FOCUS | "We will encourage the ARGONOSH's ."",
     },
     ARGFO2: {
-        NAME: "Weaponized Abominations",
-        DESC: "FOCUS | "We will encourage the ARGONOSH's ."",
+        NAME: "Leashed Abominations",
+        DESC: "FOCUS | "We will harness the power of the Argonosh. Unclouded by conscience, remorse, or morality, they are the perfect living weapon... so long as they remain under our control.""",
     },
 
   **--Synergies------------------------------------**
