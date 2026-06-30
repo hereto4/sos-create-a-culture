@@ -6,32 +6,32 @@ TECHS: {
   **--Presences------------------------------------**
 
     CANPR1: {
-        NAME: "CANTOR TechName",
-        DESC: "HAVEN PRESENCE | "CANTOR, the XSUBTITLE, ."",
+        NAME: "Cantor Remnant",
+        DESC: "HAVEN PRESENCE | "Cantor, the Ancient Giants, ."",
     },
 
   **--Focuses------------------------------------**
 
     CANFO1: {
-        NAME: "TechName",
-        DESC: "FOCUS | "We will encourage the CANTOR's ."",
+        NAME: "Ancient Protectors of Istarii",
+        DESC: "FOCUS | "We will encourage the Cantor's combat prowess, of their ancient duty as protectors of the realm; towering warriors defending the divine, smiting all who oppose the Istarii's will."",
     },
     CANFO2: {
-        NAME: "TechName",
-        DESC: "FOCUS | "We will encourage the CANTOR's ."",
+        NAME: "Living Sculptures of Arthuri",
+        DESC: "FOCUS | "We will remind the Cantor's ."",
     },
 
   **--Synergies------------------------------------**
 
     CANSY1: {
-        NAME: "TechName",
+        NAME: "Return from Extinction",
         DESC: "SYNERGY FOCUS | "."
-[!] REQUIRES a Major Presence of CANTOR and XOTHERRACE.",
+[!] REQUIRES a Haven Presence of Cantor and a Major Presence of Dondorians.",
     },
     CANSY2: {
-        NAME: "TechName",
+        NAME: "An Ancient Foe, Spirit Broken",
         DESC: "SYNERGY FOCUS | "."
-[!] REQUIRES a Major Presence of CANTOR and XOTHERRACE.",
+[!] REQUIRES a Haven Presence of Cantor and Major Presence of Humans.",
     },
 
 **--Argonosh--------------------------------------------------------------------------**
@@ -39,32 +39,32 @@ TECHS: {
   **--Presences------------------------------------**
 
     ARGPR1: {
-        NAME: "ARGONOSH TechName",
-        DESC: "HAVEN PRESENCE | "ARGONOSH, the XSUBTITLE, ."",
+        NAME: "Argonosh Remnant",
+        DESC: "HAVEN PRESENCE | "Argonosh, the Chaos Spawn, ."",
     },
 
   **--Focuses------------------------------------**
 
     ARGFO1: {
-        NAME: "TechName",
+        NAME: "Children of Chaos",
         DESC: "FOCUS | "We will encourage the ARGONOSH's ."",
     },
     ARGFO2: {
-        NAME: "TechName",
+        NAME: "Weaponized Abominations",
         DESC: "FOCUS | "We will encourage the ARGONOSH's ."",
     },
 
   **--Synergies------------------------------------**
 
     ARGSY1: {
-        NAME: "TechName",
+        NAME: "An Ancient Alliance",
         DESC: "SYNERGY FOCUS | "."
-[!] REQUIRES a Major Presence of ARGONOSH and XOTHERRACE.",
+[!] REQUIRES a Haven Presence of Argonosh and a Major Presence of Humans.",
     },
     ARGSY2: {
-        NAME: "TechName",
+        NAME: "Unholy Symbiosis",
         DESC: "SYNERGY FOCUS | "."
-[!] REQUIRES a Major Presence of ARGONOSH and XOTHERRACE.",
+[!] REQUIRES a Haven Presence of Argonosh and a Major Presence of Garthimi.",
     },
 
 **--All Haven Races--------------------------------------------------------------------------**
@@ -74,7 +74,7 @@ TECHS: {
     HAVSY1: {
         NAME: "TechName",
         DESC: "SYNERGY FOCUS | "."
-[!] REQUIRES a Haven Presence of CANTOR and ARGONOSH.",
+[!] REQUIRES a Haven Presence of Cantor and Argonosh.",
     },
 
 },
