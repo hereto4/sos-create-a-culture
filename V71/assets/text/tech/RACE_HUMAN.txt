@@ -55,7 +55,7 @@ TECHS: {
   ** Monoraces **
 
     HUMMO1: {
-        NAME: "State Patriots",
+        NAME: "Patriots of the State",
         DESC: "MONORACE FOCUS | "Foreigners have schemed outside our borders for too long. To survive we must embrace our tribalist nature: strength in brotherhood, comradery in arms, and obedience to a strong authority figure. We shall rally behind the state flag and defend our way of life--it's us or them!"
 ---
 [!] REQUIRES all non-slave Citizens to be Human-only.",

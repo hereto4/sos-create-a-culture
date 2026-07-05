@@ -1,10 +1,33 @@
-Changelog v1.6.0 - "The Haven Races"
+Changelog v1.6.0 - "Tyrant's Retinue"
 MAJOR ADDITIONS
-- Haven races: Presences, Focuses, Synergies
-- implementation of new custom boostables: Plunder, Fear, Indoctrination
+- implementation of 3 new custom boostables: Plunder, Fear, Indoctrination
+-- PLUNDER: increases slaves+resources gained by raiding on the world map 
+-- FEAR: gives your soldiers a fear aura, demoralizing nearby enemies
+-- INDOCTRINATION: increases the efficacy of indoctrinating subjects
+BALANCING
+Tilapi
+- Meme [DETERMENT]: removed +Speed, added +Fear
+- Meme [SAVAGERY]: removed +Dexterity, added +Plunder
+- Monorace [SCOURGE OF THE FOREST]: removed +Dexterity/+Security, added +Plunder/+Fear
+Humans
+- Meme [STORYTELLING]: removed +Lawfulness, added +Indoctrination
+- Meme [AMBITION]: removed +NobleRank, added +Proximity
+- Meme [TENACITY]: removed +ColdResist, added +Mass
+- Focus [FLEXIBLE MINDS]: removed +NobleSlot, added +School
+- Monorace [PATRIOTS OF THE STATE]: removed +Loyalty, added +Indoctrination 
+Dondorians
+- Meme [SPLENDOR]: removed +Embassy, added +Opinion
+- Focus [STALWART CITIZENS]: removed -Laboratory/Hunter, added +NewsNeed/-Plunder
+- Monorace [BASTION OF ORDER]: removed -Tariffs
+Garthimi
+- Meme [PRAGMATISM]: removed -Morale, added -Deflation
+- Monorace [THE HIVEMIND]: removed -Laboratory
+Amevias
+- Focus [FRESHWATER CUSTODIANS]: removed -Soiling, added +Health
+- Monorace [CULT OF THE DEPTHS]: first-pass overall rework
 FIXES
 - implementation of new custom OFCITIZEN comparator to correct for v71's function-drift of population keys
-- TARGET_RACE: AMEVIA (from Q_AMEVIA)
+- made Amevia & Garthimi monorace techs affect only same-race subjects (so diff-race slaves don't benefit)
 
 Changelog v1.5.0 - "Game Update v71"
 v71 COMPATBILITY

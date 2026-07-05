@@ -118,7 +118,7 @@ TECHS: {
 		},
         BOOST: {
             CIVIC_RAIDING>MUL: 1.3,
-            PHYSICS_SPEED>MUL: 1.3,
+            BATTLE_FEAR>ADD: 0.3,
             BATTLE_RANGED_BOW>MUL: 1.3,
             CIVIC_IMMIGRATION>MUL: 0.7,
         },
@@ -133,7 +133,7 @@ TECHS: {
 			TILPR1: 1,
 		},
         BOOST: {
-            BATTLE_DEXTERITY>MUL: 1.3,
+            WORLD_PLUNDER>MUL: 1.3,
             BATTLE_OFFENCE_SKILL>MUL: 1.3,
             ROOM_HUNTER_NORMAL>MUL: 1.3,
             BATTLE_FORMATION_SKILL>MUL: 0.7,
@@ -186,12 +186,12 @@ TECHS: {
 		},
 		REQUIRES: {
 		    EQUAL: {
-		        POPULATION_TILAPI_OFCITIZEN_F: 1.0,
+		        POPULATION_TILAPI_CITIZEN_OFCLASS_F: 1.0,
 		    },
 		},
         BOOST: {
-            CIVIC_RAIDING>MUL: 1.15,
-            BATTLE_DEXTERITY>MUL: 1.1,
+            WORLD_PLUNDER>MUL: 1.15,
+            BATTLE_FEAR>ADD: 0.1,
             ROOM_ARCHERY_VANILLA>MUL: 1.1,
             PHYSICS_SPEED>MUL: 1.1,
             ROOM_EMBASSY>MUL: 0.85,

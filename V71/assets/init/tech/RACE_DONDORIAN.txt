@@ -81,8 +81,8 @@ TECHS: {
             BEHAVIOUR_LAWFULNESS>MUL: 1.1,
             BATTLE_FORMATION_SKILL>MUL: 1.1,
             PHYSICS_SOILING>MUL: 0.9,
-            ROOM_LABORATORY_NORMAL>MUL: 0.9,
-            ROOM_HUNTER_NORMAL>MUL: 0.9,
+            RATES_SPEAKER>MUL: 1.15,
+            WORLD_PLUNDER>MUL: 0.9,
 		},
 		ICON: 32->TECH_RACE->10,
 	},
@@ -135,7 +135,7 @@ TECHS: {
 		},
 		BOOST: {
 		    ROOM_WORKSHOP_MASON>MUL: 1.3,
-		    ROOM_EMBASSY>MUL: 1.3,
+		    CIVIC_OPINION>MUL: 1.3,
 		    CIVIC_IMMIGRATION>MUL: 1.3,
             CIVIC_MAINTENANCE>MUL: 0.7,
 		},
@@ -189,7 +189,7 @@ TECHS: {
 		},
 		REQUIRES: {
 		    EQUAL: {
-		        POPULATION_DONDORIAN_OFCITIZEN_F: 1.0,
+		        POPULATION_DONDORIAN_CITIZEN_OFCLASS_F: 1.0,
 		    },
 		},
 		BOOST: {
@@ -199,7 +199,6 @@ TECHS: {
             ROOM_REFINER_SMELTER>MUL: 1.1,
             BEHAVIOUR_HAPPINESS>MUL: 0.9,
             ROOM_LABORATORY_NORMAL>MUL: 0.9,
-            WORLD_PROXIMITY_TOLL>MUL: 0.9,
             ACTIVITY_JUDGE>MUL: 1.15,
 		},
 		ICON: 32->TECH_RACE->50,
