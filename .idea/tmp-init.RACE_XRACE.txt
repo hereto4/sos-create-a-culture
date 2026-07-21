@@ -193,7 +193,7 @@ TECHS: {
 		},
 		REQUIRES: {
 			EQUAL: {
-				POPULATION_XRACE_CITIZEN_F: 1.0,
+				POPULATION_XRACE_OFCITIZEN_F: 1.0,
 			},
 		},
         BOOST: {
