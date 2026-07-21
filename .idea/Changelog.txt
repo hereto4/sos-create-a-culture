@@ -30,7 +30,7 @@ FIXES
 - made Amevia & Garthimi monorace techs affect only same-race subjects (so diff-race slaves don't benefit)
 
 Changelog v1.5.0 - "Game Update v71"
-v71 COMPATBILITY
+v71 COMPATIBILITY
 - made compatible with update v71:
 -- Pacifism (deprecated in v71) swapped to Trust
 -- Trade Fee Discount (deprecated in v71) swapped to Trade Proximity Toll
