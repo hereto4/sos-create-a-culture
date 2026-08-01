@@ -1,8 +1,23 @@
 ** TEMPLATE USAGE: replace these placeholders with their race-appropriate versions:
- ** XID – race acronym id
- ** XRACE - race name key
- ** replace TECHRACE with TECHRACE_<RACENAME> for modded races
- ** replace XOTHERRACE with partner synergy race
+ ** XID – race acronym id (ex. HUM); this assigns your tech ID
+ ** XRACE - race name key (ex. HUMAN); this assigns pop requirements to your race
+ ** replace TECHRACE with TECHRACE_<RACENAME> for modded races (ex. TECHRACE_VARGEN); this assigns your sprite file
+ ** replace XOTHERRACE with partner synergy race (ex. CRETONIAN); this assigns pop requirements to your synergy race
+ ** THESE ARE CASE-SENSITIVE! If using Find+Replace function, enable "Cc" (match-case)!!
+ 
+** ENTERING BOOSTS: All values are preset to gaurantee out-of-the-box balancing (more or less)
+ ** Costs and tech requirements are preset, do not modify
+ ** Each tech type is grouped cleanly (Presences, Memes, Focuses, Monorace, and Synergy)
+ ** Each tech type has a specific number of positive and negative values and preset intervals; no need to adjust these
+ ** Some tech types have ranks; the effect MULs will scale with rank; no need to adjust these
+ ** Simply replace each XBOOST one-by-one with a real boost key
+ 
+ ** DESIGN PHILOSHOPHY: Effects are chosen based on tech type
+  ** PRESENCES x3: Gives preset Gov points with 1 small flavor-only effect (+/-10%; 0 ranks)
+  ** FOCUSES x2: Works as a specialization of a race; affects ONLY this race. 3 positives, 2 negatives (+/-10% per rank; 3 ranks)
+  ** MEMES x4: Major city-wide traits that affect ALL races; each should be impactful. 3 positives, 1 negative (+/-30%, 0 ranks)  
+  ** MONORACE x1: Massive playthrough-defining effects; requires non-slaves are ONLY this race. Allows niche playstyle otherwise not possible. 1 major positives, 1 major negative (+/-15% per rank); 3 positives, 2 negatives (+/-10% per rank); 6 ranks 
+  ** SYNERGY x1: Rewards specific race-combo; the thematic opposite of Monorace. Same preset values as Monorace.
 
 TREE: {
     **     1      2      3      4      5      6      7

@@ -48,8 +48,8 @@ TECHS: {
         DESC: "MEME | "Our culture will integrate the Amevias' reclusive nature; an indifference to world affairs, a desire to be simply left alone."",
     },
     AMEME4: {
-        NAME: "Aquatics",
-        DESC: "MEME | "Our culture will integrate the Amevias' symbiosis with the waters of Syx, their ability to thrive in oceans and rivers."",
+        NAME: "Aquaculture",
+        DESC: "MEME | "Our culture will integrate the Amevias' symbiosis with the waters of Syx, their ability to thrive in lakes and rivers."",
     },
 
   ** Mono-Race **

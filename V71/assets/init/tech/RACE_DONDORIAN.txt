@@ -80,7 +80,7 @@ TECHS: {
 		BOOST: {
             BEHAVIOUR_LAWFULNESS>MUL: 1.1,
             BATTLE_FORMATION_SKILL>MUL: 1.1,
-            PHYSICS_SOILING>MUL: 0.9,
+            PHYSICS_CLEANLINESS>MUL: 1.1,
             RATES_SPEAKER>MUL: 1.15,
             WORLD_PLUNDER>MUL: 0.9,
 		},

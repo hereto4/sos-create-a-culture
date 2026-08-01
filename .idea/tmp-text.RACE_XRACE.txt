@@ -1,18 +1,26 @@
+** TEMPLATE USAGE: replace these placeholders with their race-appropriate versions:
+ ** XID – race acronym id (ex. HUM)
+ ** XRACE - race name key (ex. HUMAN)
+ ** XRace - race name string (ex. Human)
+ ** replace XOtherRace with partner synergy race (ex. Cretonian)
+ ** replace TECHRACE with TECHRACE_<RACENAME> for modded races
+ ** THESE ARE CASE-SENSITIVE! If using Find+Replace function, enable "Cc" (match-case)!!
+
 NAME: "XRACE Culture",
 TECHS: {
 
   **--Presences------------------------------------**
 
     XIDPR1: {
-        NAME: "XRACE TechName",
-        DESC: "MINOR PRESENCE | "XRACE, the XSUBTITLE, ."",
+        NAME: "XRace TechName",
+        DESC: "MINOR PRESENCE | "XRace, the XSubtitle, ."",
     },
     XIDPR2: {
-        NAME: "XRACE TechName",
+        NAME: "XRace TechName",
         DESC: "MODERATE PRESENCE | "."",
     },
     XIDPR3: {
-        NAME: "XRACE TechName",
+        NAME: "XRace TechName",
         DESC: "MAJOR PRESENCE | "."",
     },
 
@@ -20,30 +28,30 @@ TECHS: {
 
     XIDFO1: {
         NAME: "TechName",
-        DESC: "FOCUS | "We will encourage the XRACE's ."",
+        DESC: "FOCUS | "We will encourage the XRace's ."",
     },
     XIDFO2: {
         NAME: "TechName",
-        DESC: "FOCUS | "We will encourage the XRACE's ."",
+        DESC: "FOCUS | "We will encourage the XRace's ."",
     },
 
   **--Memes------------------------------------**
 
     XIDME1: {
         NAME: "TechName",
-        DESC: "MEME | "Our culture will integrate the XRACE's ."",
+        DESC: "MEME | "Our culture will integrate the XRace's ."",
     },
     XIDME2: {
         NAME: "TechName",
-        DESC: "MEME | "Our culture will integrate the XRACE's ."",
+        DESC: "MEME | "Our culture will integrate the XRace's ."",
     },
     XIDME3: {
         NAME: "TechName",
-        DESC: "MEME | "Our culture will integrate the XRACE's ."",
+        DESC: "MEME | "Our culture will integrate the XRace's ."",
     },
     XIDME4: {
         NAME: "TechName",
-        DESC: "MEME | "Our culture will integrate the XRACE's ."",
+        DESC: "MEME | "Our culture will integrate the XRace's ."",
     },
 
   **--Monorace------------------------------------**
@@ -51,7 +59,7 @@ TECHS: {
     XIDMO1: {
         NAME: "TechName",
         DESC: "MONORACE FOCUS | "."
-[!] REQUIRES all non-slave Citizens to be XRACE-only.",
+[!] REQUIRES all non-slave Citizens to be XRace-only.",
     },
 
   **--Synergy------------------------------------**
@@ -59,7 +67,7 @@ TECHS: {
     XIDSY1: {
         NAME: "TechName",
         DESC: "SYNERGY FOCUS | "."
-[!] REQUIRES a Major Presence of XRACE and XOTHERRACE.",
+[!] REQUIRES a Major Presence of XRace and XOtherRace.",
     },
 
 },

@@ -1,0 +1,35 @@
+** ==========================================================================
+**  Create-A-Culture - Update Notice
+**  -------------------------------------------------------------------------
+**  Shows a one-time popup of these changes the first time a player enters a
+**  game after this mod's _Info VERSION changes. Driven by the Extended
+**  Boostables update-notice service (which must be loaded alongside CAC).
+**
+**  Fires only when BOTH: (1) _Info VERSION (../_Info.txt) differs from the
+**  last shown version (tracked in
+**   %APPDATA%/songsofsyx/saves/profile/Create-A-Culture-update.txt), and
+**  (2) ENABLED below is true. A disabled release is NOT recorded.
+**
+**  CHANGES markup (one entry per line):
+**    "# Heading"      large heading      "## Heading"  smaller heading
+**    "---"            horizontal divider  ""            blank spacer
+**    "[tag] text"     colored text; tags: good great bad worst warn error
+**                     label sub normal   (unknown tag = left as literal)
+**
+**  CAC is data-only, so this file IS the source of truth (no rebuild).
+**  Lines starting with ** are comments (the game's Json format).
+** ==========================================================================
+
+ENABLED: true,
+TITLE: "Create-A-Culture Updated!",
+CHANGES: [
+	"# What's New in v1.6.0",
+	"[good] Added a new culture tech tree.",
+	"[good] More per-race culture options.",
+	"",
+	"## Balance",
+	"[warn] Gov point costs rebalanced.",
+	"[bad] Removed the legacy monorace bonus.",
+	"---",
+	"Thanks for playing Create-A-Culture!",
+]
