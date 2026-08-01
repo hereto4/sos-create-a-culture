@@ -1,30 +1,53 @@
 Changelog v1.7.0 - "The Class Update"
-MAJOR ADDITIONS
-- implemented my new Class Treatment custom effects into various culture techs
--- Class Treatment keys target a specific class of citizen: Slave, Plebeian, or Noble
--- [NEW EFFECT] Class (Contentment): reduces the basic needs of a specific class (thirst, hunger, shopping); >1 = less needs, <1 = more needs
--- [NEW EFFECT] Class (Skill): increases the job skill of a specific class; Class (Skill) increases all jobs and Class (JobType) increases skill for that type of job
-BALANCING
-- All Presence techs now give a +/-2% bonus effect, instead of +/-5%
+🚀MAJOR ADDITIONS
+• implemented my new Class Treatment category of effects into various culture techs
+⎿ Class Treatment keys target a specific class of citizen: Slave, Plebeian, or Noble
+⎿ [NEW EFFECT] Class (Contentment): reduces the basic needs of a specific class (thirst, hunger, shopping); >1 = less needs, <1 = more needs
+⎿ [NEW EFFECT] Class (Skill): increases the job skill of a specific class for a specific set of jobs, ex. Slaves (Mining) or Plebeians (Workshops)
+⎿ [NEW EFFECT] Nobles (Office): increases the effectiveness of a specific Noble office type, ex. Nobles (Pastures)
+⚖️BALANCING
+• All Presence techs now give a +/-2% bonus effect, instead of +/-5%
 Amevias
-- Meme [OBSTINANCE]: removed extra -Indotrination malus
-- Meme [RECLUSION]: changed ++Loyalty to ++Sanity, --Proximity to --Emmissaries, removed extra ++Raid Security boost
-- Monoculture [CULT OF THE DEPTHS]: changed +Sanity to +Happiness, -Cotton Farming to -Sanity
-- Meme [AQUATICS] renamed to [AQUACULTURE]
+• Meme [OBSTINANCE]: removed 🔽Indotrination
+• Meme [RECLUSION]: ⏫Loyalty –> ⏫Sanity, ⏬Proximity –> ⏬Emmissaries, removed ⏫Raid Security
+• Mono [CULT OF THE DEPTHS]: 🔼Sanity –> 🔼Happiness, 🔽Cotton Farming –> 🔽Sanity
+• Meme [AQUATICS] renamed –> [AQUACULTURE]
 Cretonians
-- Focus [LAND OF PLENTY]: renamed to [ANCESTRAL FARMERS]
-- Focus [WARM HEARTHS]: renamed to [WELCOMING NEIGHBORS]
-- Meme [CREATURE COMFORTS]: changed --Cold Resist to -Plebeians (Contentment)
-- Meme [FAMILY TIES]: changed ++Librarians to ++Reproduction Speed 
-INTERFACE TWEAKS
-- Tech Effect Coloring: effects displayed in tech tooltips have improved color-coding
--- effects that negatively affect the player now color green when <1 and red when >1, clearly indicating that higher = bad 
--- neutral effects (i.e. activity modifiers) now color grey
-- Tech Effect Grouping: effects are now grouped and sorted based on magnitude, in order: positive -> negative -> neutral 
-BACKEND
-- removed tech-sorting.jar; functionality is now provided by Extended Boostables
-FIXES
-- removed redundant target-race.jar; functionality already provided by Extended Boostables
+• Focus [LAND OF PLENTY]: renamed –> [ANCESTRAL FARMERS]
+• Focus [WARM HEARTHS]: renamed –> [WELCOMING NEIGHBORS]
+• Meme [CREATURE COMFORTS]: ⏬Cold Resist –> 🔽Plebeians (Contentment)
+• Meme [FAMILY TIES]: ⏫Librarians –> ⏫Reproduction Speed
+• Meme [PACIFISM]: ⏫Happiness –> ⏫Lifespan, ⏬Offence Skill –> ⏬Conscription, added ⏬Activity (Punishment)
+• Mono [STRONGER TOGETHER]: ⏫Immigration –> 🔼Immigration, 🔼Morale –> ⏫Morale
+Dondorians
+• Focus [ANCIENT ARTISANS]: 🔼Deflation –> 🔼Smelting, 🔽Raid Security –> 🔼Smithy Consumption Rate
+• Meme [CRAFTSMANSHIP]: ⏬World Production (Clay/Wood/Gems) –> ⏫Workshop Consumption Rate (Clay/Wood/Gems)
+• Meme [INDUSTRY]: ⏫Dirtiness +30% –> +60%
+• Meme [BEAURACRACY]: DROPPED; replaced with...
+⎿ NEW Meme [GUILDS]: ⏫Worker's Guild, ⏫Plebeians (Workshops), ⏫Nobles (Workshops), ⏬Plebeians (Contentment)
+Garthimi
+• Focus [AMBUSH PREDATORS]: 🔼Dexterity –> 🔼Pierce Damage, 🔽Lawfulness –> 🔽Block Skill
+• Meme [COLLECTIVISM]: ⏫Submission –> ⏫Plebeians (Contentment)
+• Meme [PRAGMATISM]: ⏫Transport –> ⏬Shopping
+• Mono [THE HIVEMIND]: ⏫Breeder –> ⏫Reproduction Speed, ⏫Loyalty –> ⏫Plebeian (Contentment)
+Human
+• Focus [FREE WILL]: ⏬Happiness –> 🔼Plebeians (All Jobs), 🔽Administrators –> 🔽All Classes (Contentment)
+• Meme [TENACITY]: ⏫Mass –> ⏫Lifespan, ⏬Acceleration –> ⏬Health
+• Meme [AMBITION]: ⏫Emmissaries –> 🔼Nobles (All Offices), ⏬Happiness –> 🔽All Classes (Contentment)
+• Meme [STORYTELLING]: ⏫Indoctrination –> ⏫Schools
+Tilapi
+• Focus [SYNCRETIC DRUIDS]: 🔼Sanity –> 🔼Piety (Nature)
+• Meme [ECOCENTRISM]: ⏫Sanity –> ⏫Piety (Nature)
+📊INTERFACE TWEAKS
+• Tech Effect Coloring: effects displayed in tech tooltips have improved color-coding
+⎿ effects that negatively affect the player now color green when <1 and red when >1, clearly indicating that higher = bad
+⎿ neutral effects (i.e. activity modifiers) now color grey
+• Tech Effect Grouping: effects are now grouped and sorted based on magnitude, in order: positive -> negative -> neutral
+⚙️BACKEND
+• removed tech-sorting.jar; functionality is now provided by Extended Boostables
+🐞FIXES
+• removed redundant target-race.jar; functionality already provided by Extended Boostables
+• Meme [STRONGER TOGETHER] now only affects Cretonians, as originally intended
 
 Changelog v1.6.0 - "Tyrant's Retinue"
 MAJOR ADDITIONS

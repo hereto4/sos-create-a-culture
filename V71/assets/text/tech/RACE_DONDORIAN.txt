@@ -36,7 +36,7 @@ TECHS: {
   ** Memes **
 
     DONME1: {
-        NAME: "Bureaucracy",
+        NAME: "Guilds",
         DESC: "MEME | "Our culture will integrate the Dondorian's rigid adherence to law, structure, and methodical organisation."",
     },
     DONME2: {

@@ -45,7 +45,7 @@ TECHS: {
     },
     CREME3: {
         NAME: "Family Ties",
-        DESC: "MEME | "Our culture will integrate the Cretonian's tightly-knit family life, and the passing of knowledge from one generation to the next."",
+        DESC: "MEME | "Our culture will integrate the Cretonian's familial lifestyle; big extended families forming a tight-knit community, comprised of many generations."",
     },
     CREME4: {
         NAME: "Pacifism",

@@ -37,7 +37,7 @@ TECHS: {
 
     GARME1: {
         NAME: "Sacrifice",
-        DESC: "MEME | "Our culture will integrate the Garthimis' willingness to give life and limb for the greater good of the hive."",
+        DESC: "MEME | "Our culture will integrate the Garthimis' willingness to give life and limb for the hive; an altogether lack of self-preservation."",
     },
     GARME2: {
         NAME: "Exploitation",
