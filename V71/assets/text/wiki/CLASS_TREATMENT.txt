@@ -1,0 +1,138 @@
+WIKIS: [
+	{
+		CATEGORY: "Class Treatment",
+		NAME: "* Class Treatment",
+		LINK_KEY: CLASS_TREATMENT,
+		TEXT: "
+INTRODUCTION
+------------------------------------------------
+The <c 219_255_077 Create-A-Culture> mod introduces a new category of effects: <c 219_255_077 Class Treatment>. These new effects are granted by various <a CULTURE culture techs>, and are defined by targeting a specific class of subject: <c 219_255_077 Slaves>, <c 219_255_077 Plebeians>, or <c 219_255_077 Nobles>. 
+ 
+TYPES & EXAMPLES
+------------------------------------------------
+There are three types of effects in this category:
+ 
+- <a CLASS_TREATMENT__CONTENTMENT Class (Contentment)>: Reduces or raises the <c 219_255_077 basic needs> of a specific class (thirst, hunger, shopping).
+- <a CLASS_TREATMENT__SKILL Class (Skill)>: Increases the <c 219_255_077 job skill> of a specific class; ex. Slaves (Mining) or Plebeians (Workshops).
+- <a CLASS_TREATMENT__OFFICE Nobles (Office)>: Increases the effectiveness of a specific <c 219_255_077 Noble office type>; ex. Nobles (Pastures).
+ 
+FOR NOBLES
+------------------------------------------------
+To make these effects meaningful, it was also necessary to add a new mechanic to Nobles: <a CLASS_TREATMENT__NOBLES Noble Needs>.
+		",
+    },
+	{
+		CATEGORY: "Class Treatment",
+		NAME: "Class Contentment",
+		LINK_KEY: CLASS_TREATMENT__CONTENTMENT,
+		TEXT: "
+INTRODUCTION
+------------------------------------------------
+Certain <a CULTURE culture techs> affect the <c 219_255_077 Contentment> of a class, usually by lowering Contentment as a trade-off for increasing Class Skill. Class Contmentment controls the <c 219_255_077 needs of a specific class> of subjects. A class's basic needs are defined as <c 219_255_077 Thirst>, <c 219_255_077 Hunger>, and <c 219_255_077 Shopping>.
+ 
+EFFECTS PER CLASS
+------------------------------------------------
+There is one Contentment effect per class:
+ 
+- <c 219_255_077 Slaves (Contentment)>
+- <c 219_255_077 Plebeians (Contentment)>
+- <c 219_255_077 Nobles (Contentment)>
+ 
+HOW IT WORKS
+------------------------------------------------
+All classes start at <c 219_255_077 Contentment = 1>, which means their basic needs are <c 219_255_077 unaffected>. 
+ 
+<c 219_255_077 Higher contentment> (Contentment greater than 1) means a subject is more content. Their basic needs increase at a <c 219_255_077 slower rate>; that is to say, they are less needy. High-contentment subjects will drink, eat, and shop less often.
+ 
+<c 219_255_077 Lower contentment> (Contentment less than 1) means a subject is less content. Their basic needs increase at a <c 219_255_077 faster rate>; they are more needy. Low-contentment subjects will drink, eat, and shop more often.
+		",
+    },
+	{
+		CATEGORY: "Class Treatment",
+		NAME: "Class Skill",
+		LINK_KEY: CLASS_TREATMENT__SKILL,
+		TEXT: "
+INTRODUCTION
+------------------------------------------------
+Certain <a CULTURE culture techs> affect <c 219_255_077 Class Skill>, usually by increasing it in return for lower <a CLASS_TREATMENT__CONTENTMENT Class Contentment>. Class Skill controls the broad <c 219_255_077 job skill of a certain class> of subject (either <c 219_255_077 Plebeians> or <c 219_255_077 Slaves>).
+ 
+ALL-JOB EFFECTS
+------------------------------------------------
+There are 2 broad Class Skills that affect the skill of <c 219_255_077 all jobs> for that class:
+		     
+- <c 219_255_077 Slaves (Skill)>
+- <c 219_255_077 Plebeians (Skill)>
+ 
+PER-JOB EFFECTS
+------------------------------------------------
+There are also per-job versions for every combination of class and room type. Some examples:
+		     
+- <c 219_255_077 Plebeians (Pastures)>: affects all pasture jobs; onx, globdien, auroch, etc. 
+- <c 219_255_077 Slaves (Mines)>: affects all mine jobs; ore, silicon, clay, etc.
+- <c 219_255_077 Plebeians (Workshops)>: affects all workshop jobs; smithies, carpenters, potteries, etc.
+- and so on...
+ 
+HOW IT WORKS
+------------------------------------------------
+Class Skill starts at 1. A Class Skill greater than 1 <c 219_255_077 increases> job skill for that class, while a value less than 1 <c 219_255_077 decreases> job skill. 
+ 
+DESIGN INTENTION
+------------------------------------------------
+The purpose of these effects is to allow city <c 219_255_077 specialisation on a class level>. Make your Slaves efficient farmers or send them to the mines; create a city of Plebeian artisans that excel in workshops.
+		",
+    },
+	{
+		CATEGORY: "Class Treatment",
+		NAME: "Office Skill",
+		LINK_KEY: CLASS_TREATMENT__OFFICE,
+		TEXT: "
+INTRODUCTION
+------------------------------------------------
+<c 219_255_077 Office Skill> is the Noble version of <a CLASS_TREATMENT__SKILL Class Skill>. Since Nobles don't work in rooms nor use job skill, certain <a CULTURE culture techs> will instead affect the <c 219_255_077 benefits of their held office>. 
+ 
+ALL-OFFICES EFFECT
+------------------------------------------------
+There is 1 broad-level Noble Office effect that affects <c 219_255_077 all offices>:
+ 
+- <c 219_255_077 Nobles (Office)>
+ 
+PER-OFFICE EFFECTS
+------------------------------------------------
+And there is also an effect for every type of office. For example:
+ 
+- <c 219_255_077 Nobles (Farming)>: affects Master of Farming office
+- <c 219_255_077 Nobles (Embassy)>: affects Master of Embassies office
+- <c 219_255_077 Nobles (Workshops)>: affects Master of Workshops office
+- and so on...
+ 
+HOW IT WORKS
+------------------------------------------------
+Office Skill starts at 1. An Office Skill greater than 1 <c 219_255_077 increases> Noble office effects, while a value less than 1 <c 219_255_077 decreases> them.
+		",
+    },
+	{
+		CATEGORY: "Class Treatment",
+		NAME: "Noble Needs",
+		LINK_KEY: CLASS_TREATMENT__NOBLES,
+		TEXT: "
+INTRODUCTION
+------------------------------------------------
+Increasing a Noble's basic needs via <a CLASS_TREATMENT__CONTENTMENT Class Contentment> is a vital part of balancing certain <a CULTURE culture techs>. However, in the base game, a Noble's needs-fulfillment doesn't matter. Unless they starve to death, their fulfillment is irrelevant and <c 219_255_077 never factored into your city's happiness> or loyalty. 
+ 
+A new mechanic, <c 219_255_077 Noble Needs>, resolves this. Now, your Nobles' <c 219_255_077 needs-fulfillment directly impacts the effects of the office> they hold. 
+ 
+HOW IT WORKS
+------------------------------------------------
+- A Noble whose basic needs (<c 219_255_077 Thirst>, <c 219_255_077 Hunger>, <c 219_255_077 Shopping>) are <c 219_255_077 completely met> will grant the <c 219_255_077 full benefits> of the Noble office they currently hold.
+- When a Noble's needs are <c 219_255_077 not> fully met, the effects of their office <c 219_255_077 scale downwards> in proportion to their needs defecit. 
+ 
+DESIGN INTENTION
+------------------------------------------------
+Tying a Noble's needs to their office achieves three things:
+ 
+- You now need to <c 219_255_077 pay close attention to the subjects you elevate to Nobility>; make sure their needs are met, and pay attention to a subject's needs-related traits when choosing a new Noble.
+- <c 219_255_077 Balances Noble offices>. Noble offices are wildly powerful in the base game. Introducing a management upkeep and dynamic reduction in office benefits helps reign in their power.
+- Makes the new Nobles (Contentment) effect matter; <c 219_255_077 needier Nobles are a real cost> to the player, and something to consider when taking a culture tech that carries it.
+		",
+	},
+],

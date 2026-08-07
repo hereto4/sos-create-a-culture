@@ -166,7 +166,7 @@ TECHS: {
 		},
         BOOST: {
             ROOM_ORCHARD_FRUIT>MUL: 1.3,
-            PIETY_NATURE>ADD: 0.3,
+            RATES_NATURE>ADD: 0.3,
             ROOM_WOODCUTTER>MUL: 1.3,
             ROOM_REFINER_SMELTER>MUL: 0.7,
         },

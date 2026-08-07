@@ -135,7 +135,7 @@ TECHS: {
 		BOOST: {
             CIVIC_SPOILAGE>MUL: 1.3,
             ROOM_STOCKPILE>MUL: 1.3,
-            RATES_HUNGER>MUL: 0.85,
+            CLASS_CITIZEN>MUL: 1.1,
             CIVIC_RAIDING>MUL: 0.7,
 		},
 		ICON: 32->TECH_RACE->24,
