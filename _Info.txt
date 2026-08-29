@@ -1,6 +1,6 @@
-VERSION: "1.7.0",
+VERSION: "1.7.1",
 GAME_VERSION_MAJOR: 71,
-GAME_VERSION_MINOR: 19,
+GAME_VERSION_MINOR: 44,
 NAME: "Create-A-Culture",
 DESC: "Adds a 'culture' mechanic to the game via new tech trees unique to each race, that cost Gov points and reflect the population of races in your city.",
 AUTHOR: "Glorfy",

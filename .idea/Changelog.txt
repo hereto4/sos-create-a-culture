@@ -1,3 +1,11 @@
+Changelog v1.7.1
+• This update fixes the AI pathing error/crash many users have been experiencing.
+⚠️HOTFIX
+• All boosts using "Piety (Nature)" now grant "Carpentry Efficiency" instead.
+⎿ The pathing error was being caused by the custom Piety (Nature) effect
+⎿ This is a temporary change, until I can fix the pathing bug in Piety (Nature)
+⎿ This affects 2 techs: Tilapi Focus [SYNCRETIC DRUIDS] and Tilapi Meme [ECOCENTRISM]
+
 Changelog v1.7.0 - "The Class Update"
 🚀MAJOR ADDITIONS
 • implemented my new Class Treatment category of effects into various culture techs

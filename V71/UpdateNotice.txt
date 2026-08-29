@@ -20,7 +20,7 @@
 **  Lines starting with ** are comments (the game's Json format).
 ** ==========================================================================
 
-ENABLED: true,
+ENABLED: false,
 TITLE: "Create-A-Culture Updated!",
 CHANGES: [
 	"# Update v1.7.0 - The Class Update",
