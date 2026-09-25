@@ -14,11 +14,15 @@ TECHS: {
 
     CANFO1: {
         NAME: "Ancient Protectors of Istarii",
-        DESC: "FOCUS | "We will kindle the Cantor's once-legendary combat prowess, and remind them of their ancient duty as protectors of the realm."",
+        DESC: "FOCUS | "We will kindle the Cantor's once-legendary combat prowess, and remind them of their ancient duty as protectors of the realm."
+---
+[?] ONLY affects Cantor subjects.",
     },
     CANFO2: {
         NAME: "Living Sculptures of Arthuri",
-        DESC: "FOCUS | "We will encourage the application of the Cantor's perfect form: sculpted giants of impossible strength and divine precision, created by Arthuri Himself as if chiselled from stone."",
+        DESC: "FOCUS | "We will encourage the application of the Cantor's perfect form: sculpted giants of impossible strength and divine precision, created by Arthuri Himself as if chiselled from stone."
+---
+[?] ONLY affects Cantor subjects.",
     },
 
   **--Synergies------------------------------------**
@@ -26,12 +30,16 @@ TECHS: {
     CANSY1: {
         NAME: "Return from Extinction",
         DESC: "SYNERGY FOCUS | "."
-[!] REQUIRES a Haven Presence of Cantor and a Major Presence of Dondorians.",
+---
+[!] REQUIRES a Haven Presence of Cantor and a Major Presence of Dondorians.
+[?] ONLY affects Cantor subjects.",
     },
     CANSY2: {
         NAME: "An Ancient Foe, Spirit Broken",
         DESC: "SYNERGY FOCUS | "."
-[!] REQUIRES a Haven Presence of Cantor and Major Presence of Humans.",
+---
+[!] REQUIRES a Haven Presence of Cantor and a Major Presence of Humans.
+[?] ONLY affects Cantor subjects.",
     },
 
 **--Argonosh--------------------------------------------------------------------------**
@@ -47,11 +55,15 @@ TECHS: {
 
     ARGFO1: {
         NAME: "Children of Chaos",
-        DESC: "FOCUS | "We will encourage the ARGONOSH's ."",
+        DESC: "FOCUS | "We will encourage the ARGONOSH's ."
+---
+[?] ONLY affects Argonosh subjects.",
     },
     ARGFO2: {
         NAME: "Leashed Abominations",
-        DESC: "FOCUS | "We will harness the power of the Argonosh. Unclouded by conscience, remorse, or morality, they are the perfect living weapon... so long as they remain under our control.""",
+        DESC: "FOCUS | "We will harness the power of the Argonosh. Unclouded by conscience, remorse, or morality, they are the perfect living weapon... so long as they remain under our control."
+---
+[?] ONLY affects Argonosh subjects.",
     },
 
   **--Synergies------------------------------------**
@@ -59,12 +71,16 @@ TECHS: {
     ARGSY1: {
         NAME: "An Ancient Alliance",
         DESC: "SYNERGY FOCUS | "."
-[!] REQUIRES a Haven Presence of Argonosh and a Major Presence of Humans.",
+---
+[!] REQUIRES a Haven Presence of Argonosh and a Major Presence of Humans.
+[?] ONLY affects Argonosh and Human subjects.",
     },
     ARGSY2: {
         NAME: "Unholy Symbiosis",
         DESC: "SYNERGY FOCUS | "."
-[!] REQUIRES a Haven Presence of Argonosh and a Major Presence of Garthimi.",
+---
+[!] REQUIRES a Haven Presence of Argonosh and a Major Presence of Garthimi.
+[?] ONLY affects Argonosh and Garthimi subjects.",
     },
 
 **--All Haven Races--------------------------------------------------------------------------**
@@ -74,7 +90,9 @@ TECHS: {
     HAVSY1: {
         NAME: "TechName",
         DESC: "SYNERGY FOCUS | "."
-[!] REQUIRES a Haven Presence of Cantor and Argonosh.",
+---
+[!] REQUIRES a Haven Presence of Cantor and Argonosh.
+[?] ONLY affects Cantor and Argonosh subjects.",
     },
 
 },
