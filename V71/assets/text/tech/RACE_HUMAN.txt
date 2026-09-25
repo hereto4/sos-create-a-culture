@@ -22,15 +22,13 @@ TECHS: {
         NAME: "Free Will",
         DESC: "FOCUS | "We will encourage the most volatile trait of Humankind, the double-edged sword of choice and consequence."
 ---
-[!] Affects ONLY Human subjects.
-",
+[?] ONLY affects Human subjects.",
     },
     HUMFO2: {
         NAME: "Flexible Minds",
         DESC: "FOCUS | "We will encourage the versality of the Human mind, their yearning to understand; to leave the comforts of ignorance."
 ---
-[!] Affects ONLY Human subjects.
-",
+[?] ONLY affects Human subjects.",
     },
 
   ** Memes **
@@ -58,7 +56,8 @@ TECHS: {
         NAME: "Patriots of the State",
         DESC: "MONORACE FOCUS | "Foreigners have schemed outside our borders for too long. To survive we must embrace our tribalist nature: strength in brotherhood, comradery in arms, and obedience to a strong authority figure. We shall rally behind the state flag and defend our way of life--it's us or them!"
 ---
-[!] REQUIRES all non-slave Citizens to be Human-only.",
+[!] REQUIRES all non-slave Citizens to be Human-only.
+[?] ONLY affects Human subjects.",
     },
 
 },

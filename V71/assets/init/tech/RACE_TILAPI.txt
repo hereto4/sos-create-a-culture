@@ -189,6 +189,7 @@ TECHS: {
 		        POPULATION_TILAPI_CITIZEN_OFCLASS_F: 1.0,
 		    },
 		},
+		TARGET_RACE: TILAPI,
         BOOST: {
             WORLD_PLUNDER>MUL: 1.15,
             BATTLE_FEAR>ADD: 0.1,

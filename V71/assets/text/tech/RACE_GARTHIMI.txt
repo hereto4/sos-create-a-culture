@@ -22,15 +22,13 @@ TECHS: {
         NAME: "Ambush Predators",
         DESC: "FOCUS | "We will encourage the primal nature of Garthimis; their original purpose as creations of war and violence."
 ---
-[!] Affects ONLY Garthimi subjects.
-",
+[?] ONLY affects Garthimi subjects.",
     },
     GARFO2: {
         NAME: "Hive Drones",
         DESC: "FOCUS | "We will encourage the uncanny coordination of Garthimi workers; their ability to act in unison like a living machine."
 ---
-[!] Affects ONLY Garthimi subjects.
-",
+[?] ONLY affects Garthimi subjects.",
     },
 
   ** Memes **
@@ -58,7 +56,8 @@ TECHS: {
         NAME: "The Hivemind",
         DESC: "MONORACE FOCUS | "Identity, individuality, independence... these are the trappings of the single-minded. We are the Garthimi: we transcend the individual. Together we embrace our absolute devotion to the Hive and its Queen. We will be as one mind, one hive; every worker a cog in the machine, every citizen an extension of the Queen's will."
 ---
-[!] REQUIRES all non-slave Citizens to be Garthimi-only.",
+[!] REQUIRES all non-slave subjects to be Garthimi-only.
+[?] ONLY affects Garthimi subjects.",
     },
 
 },

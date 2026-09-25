@@ -22,15 +22,13 @@ TECHS: {
         NAME: "Apex Hunters",
         DESC: "FOCUS | "We will encourage the Tilapi's role as savage manhunters and feared guardians of the forest."
 ---
-[!] Affects ONLY Tilapi subjects.
-",
+[?] ONLY affects Tilapi subjects.",
     },
     TILFO2: {
         NAME: "Syncretic Druids",
         DESC: "FOCUS | "We will encourage the Tilapi's connection to the natural world; their Astarii-given affinity for the forests of Syx."
 ---
-[!] Affects ONLY Tilapi subjects.
-",
+[?] ONLY affects Tilapi subjects.",
     },
 
   ** Memes **
@@ -58,7 +56,8 @@ TECHS: {
         NAME: "Shadows in the Forest",
         DESC: "MONORACE FOCUS | "We have not forgotten the purpose of our creation, to stand vigil between lands divine and forbidden. We will embrace our ancient mandate once more and reclaim the wilds of Syx! The mortal races will once again fear stepping into the forests, lest they never return...."
 ---
-[!] REQUIRES all non-slave Citizens to be Tilapi-only.",
+[!] REQUIRES all non-slave subjects to be Tilapi-only.
+[?] ONLY affects Tilapi subjects.",
     },
 
 },

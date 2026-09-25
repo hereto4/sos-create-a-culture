@@ -22,15 +22,13 @@ TECHS: {
         NAME: "Stalwart Citizens",
         DESC: "FOCUS | "We will encourage the Dondorian's lawful nature; their need for strict order and structure."
 ---
-[!] Affects ONLY Dondorian subjects.
-",
+[?] ONLY affects Dondorian subjects.",
     },
     DONFO2: {
         NAME: "Ancient Artisans",
         DESC: "FOCUS | "We will encourage the Dondorian's legendary ability to mold and reshape the earth with artful precision."
 ---
-[!] Affects ONLY Dondorian subjects.
-",
+[?] ONLY affects Dondorian subjects.",
     },
 
   ** Memes **
@@ -58,7 +56,7 @@ TECHS: {
         NAME: "Bastion of Order",
         DESC: "MONORACE FOCUS | "We will embrace the iron fist of Dondorian law, enforcing absolute order to build a perfect society. We will turn our legendary craftsmanship into an industrial machine, maximised for efficiency!"
 ---
-[!] REQUIRES all non-slave Citizens to be Dondorian-only.",
+[!] REQUIRES all non-slave subjects to be Dondorian-only.",
     },
 
 },
