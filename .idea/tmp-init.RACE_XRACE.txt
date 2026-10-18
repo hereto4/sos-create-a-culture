@@ -30,7 +30,7 @@ TREE: {
 
 COLOR: 0_148_255,
 CATEGORY: 999,          **999 for vanilla, 1000 for modded, 1001 for haven
-ICON: 32->TECH_RACE->1,
+ICON: 32->TECH_RACE->0,
 
 TECHS: {
 
@@ -49,7 +49,7 @@ TECHS: {
 		    CIVIC_GOV>ADD: 15,
 		    XBOOST>MUL: 1.05,
 	    },
-	    ICON: 32->TECH_RACE->1,
+	    ICON: 32->TECH_RACE->0,
 	},
 	XIDPR2: {
 	    COSTS: {},
@@ -66,7 +66,7 @@ TECHS: {
 		    CIVIC_GOV>ADD: 30,
 		    XBOOST>MUL: 1.05,
 	    },
-	    ICON: 32->TECH_RACE->22,
+	    ICON: 32->TECH_RACE->1,
 	},
 	XIDPR3: {
 	    COSTS: {},
@@ -83,7 +83,7 @@ TECHS: {
 		    CIVIC_GOV>ADD: 60,
 		    XBOOST>MUL: 1.05,
 	    },
-	    ICON: 32->TECH_RACE->23,
+	    ICON: 32->TECH_RACE->2,
 	},
 
   **--Focuses-------------------------------------**
@@ -105,7 +105,7 @@ TECHS: {
             XBOOST>MUL: 0.9,
             XBOOST>MUL: 0.9,
         },
-        ICON: 32->TECH_RACE->9,
+        ICON: 32->TECH_RACE->8,
 	},
 	XIDFO2: {    ** Tech Name **
 		COSTS: {
@@ -124,7 +124,7 @@ TECHS: {
             XBOOST>MUL: 0.9,
             XBOOST>MUL: 0.9,
         },
-        ICON: 32->TECH_RACE->9,
+        ICON: 32->TECH_RACE->8,
 	},
 
   **--Memes-------------------------------------**
@@ -143,7 +143,7 @@ TECHS: {
             XBOOST>MUL: 1.3,
             XBOOST>MUL: 0.7,
         },
-        ICON: 32->TECH_RACE->17,
+        ICON: 32->TECH_RACE->16,
 	},
 	XIDME2: {    ** Tech Name **
 		COSTS: {
@@ -160,7 +160,7 @@ TECHS: {
             XBOOST>MUL: 1.3,
             XBOOST>MUL: 0.7,
         },
-        ICON: 32->TECH_RACE->25,
+        ICON: 32->TECH_RACE->24,
 	},
 	XIDME3: {    ** Tech Name **
 		COSTS: {
@@ -176,7 +176,7 @@ TECHS: {
             XBOOST>MUL: 1.3,
             XBOOST>MUL: 0.7,
         },
-        ICON: 32->TECH_RACE->33,
+        ICON: 32->TECH_RACE->32,
 	},
 	XIDME4: {    ** Tech Name **
 		COSTS: {
@@ -220,7 +220,7 @@ TECHS: {
             XBOOST>MUL: 0.9,
             XBOOST>MUL: 0.9,
         },
-        ICON: 32->TECH_RACE->49,
+        ICON: 32->TECH_RACE->48,
 	},
 
   **--Synergy------------------------------------**
@@ -249,7 +249,7 @@ TECHS: {
             XBOOST>MUL: 0.9,
             XBOOST>MUL: 0.9,
 		},
-		ICON: 32->TECH_RACE->50,
+		ICON: 32->TECH_RACE->49,
 	},
 
 },
