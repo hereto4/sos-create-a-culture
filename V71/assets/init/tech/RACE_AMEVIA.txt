@@ -67,7 +67,7 @@ TECHS: {
 
   **--Focuses-------------------------------------**
 
-	AMEFO1: {    ** Freshwater Custodians **
+	AMEFO1: {    ** Saltwater Custodians **
 		COSTS: {
 			CIVIC_GOV: 5,
 		},
@@ -86,7 +86,7 @@ TECHS: {
 		},
 		ICON: 32->TECH_RACE->8,
 	},
-	AMEFO2: {    ** Saltwater Guardians **
+	AMEFO2: {    ** Freshwater Guardians **
 		COSTS: {
 			CIVIC_GOV: 5,
 		},
@@ -99,9 +99,9 @@ TECHS: {
 		BOOST: {
             BATTLE_PIERCE_ATTACK>MUL: 1.1,
             ROOM_BARRACKS_VANILLA>MUL: 1.1,
-            CIVIC_RAIDING>MUL: 1.1,
-            CIVIC_OPINION>MUL: 0.9,
-            WORLD_PROXIMITY>MUL: 0.9,
+            BATTLE_BLOCK>MUL: 1.1,
+            RATES_WELL>MUL: 1.1,
+            BEHAVIOUR_SUBMISSION>MUL: 0.9,
 		},
 		ICON: 32->TECH_RACE->8,
 	},
@@ -194,9 +194,9 @@ TECHS: {
 		BOOST: {
             ROOM_FISHERY_NORMAL>MUL: 1.15,
             PHYSICS_HEALTH>MUL: 1.1,
-            BEHAVIOUR_HAPPINESS>MUL: 1.1,
+            BEHAVIOUR_HAPPINESS>MUL: 1.05,
             PHYSICS_STAMINA>MUL: 1.1,
-            BEHAVIOUR_SANITY>MUL: 0.9,
+            BEHAVIOUR_SANITY>MUL: 0.95,
             ROOM_MINE_ALL>MUL: 0.9,
             RATES_SKINNYDIP>MUL: 1.15,
             RATES_TEMPLE>MUL: 1.15,
