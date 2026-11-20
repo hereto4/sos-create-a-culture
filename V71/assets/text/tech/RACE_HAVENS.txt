@@ -14,7 +14,7 @@ TECHS: {
 
     CANFO1: {
         NAME: "Ancient Protectors of Istarii",
-        DESC: "FOCUS | "We will kindle the Cantor's once-legendary combat prowess, and remind them of their ancient duty as protectors of the realm."
+        DESC: "FOCUS | "We will rekindle the Cantor's once-legendary combat prowess, and remind them of their ancient duty as protectors of Syx and its Istarii creators."
 ---
 [?] ONLY affects Cantor subjects.",
     },
@@ -31,14 +31,15 @@ TECHS: {
         NAME: "Return from Extinction",
         DESC: "SYNERGY FOCUS | "."
 ---
-[!] REQUIRES a Haven Presence of Cantor and a Major Presence of Dondorians.
+[*] ENABLES natural immigration for Cantor.
+[!] REQUIRES a Haven Presence of Cantor, no Cantors enslaved, and a majority of Dondorian plebeians.
 [?] ONLY affects Cantor subjects.",
     },
     CANSY2: {
         NAME: "An Ancient Foe, Spirit Broken",
         DESC: "SYNERGY FOCUS | "."
 ---
-[!] REQUIRES a Haven Presence of Cantor and a Major Presence of Humans.
+[!] REQUIRES a Haven Presence of Cantors, all Cantors enslaved, and a majority of Human plebeians.
 [?] ONLY affects Cantor subjects.",
     },
 
@@ -55,14 +56,16 @@ TECHS: {
 
     ARGFO1: {
         NAME: "Children of Chaos",
-        DESC: "FOCUS | "We will encourage the ARGONOSH's ."
+        DESC: "FOCUS | "We will encourage the Argonosh's ."
 ---
+[*] ENABLES soldier Fear mechanic (demoralises nearby enemies).
 [?] ONLY affects Argonosh subjects.",
     },
     ARGFO2: {
         NAME: "Leashed Abominations",
         DESC: "FOCUS | "We will harness the power of the Argonosh. Unclouded by conscience, remorse, or morality, they are the perfect living weapon... so long as they remain under our control."
 ---
+[*] ENABLES soldier Fear mechanic (demoralises nearby enemies).
 [?] ONLY affects Argonosh subjects.",
     },
 
@@ -72,27 +75,17 @@ TECHS: {
         NAME: "An Ancient Alliance",
         DESC: "SYNERGY FOCUS | "."
 ---
-[!] REQUIRES a Haven Presence of Argonosh and a Major Presence of Humans.
-[?] ONLY affects Argonosh and Human subjects.",
+[*] ENABLES soldier Fear mechanic (demoralises nearby enemies).
+[!] REQUIRES a Haven Presence of Argonosh, a majority of Human plebeians, and devotion to Aminion.
+[?] ONLY affects Argonosh AND Human subjects.",
     },
     ARGSY2: {
         NAME: "Unholy Symbiosis",
         DESC: "SYNERGY FOCUS | "."
 ---
-[!] REQUIRES a Haven Presence of Argonosh and a Major Presence of Garthimi.
-[?] ONLY affects Argonosh and Garthimi subjects.",
+[*] ENABLES natural reproduction for Argonosh and Garthimi.
+[!] REQUIRES a Haven Presence of Argonosh, a majority of Garthimi plebeians, and devotion to Shmalor.
+[?] ONLY affects Argonosh AND Garthimi subjects.",
     },
 
-**--All Haven Races--------------------------------------------------------------------------**
-
-  **--Synergy------------------------------------**
-
-    HAVSY1: {
-        NAME: "TechName",
-        DESC: "SYNERGY FOCUS | "."
----
-[!] REQUIRES a Haven Presence of Cantor and Argonosh.
-[?] ONLY affects Cantor and Argonosh subjects.",
-    },
-
-},
+}

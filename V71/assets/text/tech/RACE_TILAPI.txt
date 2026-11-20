@@ -35,7 +35,9 @@ TECHS: {
 
     TILME1: {
         NAME: "Determent",
-        DESC: "MEME | "Our culture will integrate the Tilapi's god-given mandate to drive off all intruders through terror and violent demonstration."",
+        DESC: "MEME | "Our culture will integrate the Tilapi's god-given mandate to drive off all intruders through terror and violent demonstration."
+---
+[*] ENABLES soldier Fear mechanic (demoralises nearby enemies).",
     },
     TILME2: {
         NAME: "Savagery",

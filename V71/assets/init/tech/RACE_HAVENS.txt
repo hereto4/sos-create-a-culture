@@ -4,12 +4,12 @@ TREE: {
 	2: [______,______,______,______,______,______,______,],
 	3: [CANFO1,CANFO2,______,ARGFO1,ARGFO2,______,______,],
 	4: [______,______,______,______,______,______,______,],
-	5: [CANSY1,CANSY2,______,ARGSY1,ARGSY2,______,HAVSY1,],
+	5: [CANSY1,CANSY2,______,ARGSY1,ARGSY2,______,______,],
 },
 
 COLOR: 0_148_255,
 CATEGORY: 1001,          **999 for vanilla, 1000 for modded, 1001 for haven
-ICON: 32->TECH_RACE->1,
+ICON: 32->TECH_RACE_CANTOR->0,
 
 TECHS: {
 
@@ -23,12 +23,12 @@ TECHS: {
 		REQUIRES_TECH_LEVEL: {},
 		REQUIRES: {
 			GREATERE: {
-				POPULATION_CANTOR__I: 25,
+				POPULATION_CANTOR__I: 50,
 			},
 		},
 		BOOST: {
 		    CIVIC_GOV>ADD: 15,
-		    RELIGION_ATHURI_CITY>MUL: 1.05,
+		    RELIGION_ATHURI_CITY>MUL: 1.02,
 	    },
 	    ICON: 32->TECH_RACE_CANTOR->0,
 	},
@@ -49,12 +49,12 @@ TECHS: {
             BATTLE_MORALE>MUL: 1.1,
             ROOM_BARRACKS_VANILLA>MUL: 1.1,
             ROOM_WORKSHOP_SMITHY>MUL: 1.1,
-            BEHAVIOUR_SUBMISSION>MUL: 0.9,
+            CIVIC_ACCIDENT>MUL: 0.9,
             ROOM_STOCKPILE>MUL: 0.9,
         },
         ICON: 32->TECH_RACE->8,
 	},
-	CANFO2: {    ** Sculptures of Athuri **
+	CANFO2: {    ** Sculptures of Arthuri **
 		COSTS: {
 			CIVIC_GOV: 5,
 		},
@@ -80,7 +80,7 @@ TECHS: {
 		COSTS: {
 			CIVIC_GOV: 10,
 		},
-		LEVEL_MAX: 3,
+		LEVEL_MAX: 6,
 		LEVEL_COST_INC: 10,
 		REQUIRES_TECH_LEVEL: {
 			CANPR1: 1,
@@ -88,7 +88,8 @@ TECHS: {
 		REQUIRES: {
 		    GREATERE: {
 		        POPULATION_CANTOR_CITIZEN_I: 50,
-			    POPULATION_DONDORIAN_CITIZEN_I: 2000,
+		        POPULATION_CANTOR_SLAVE_I: 0,
+			    POPULATION_DONDORIAN_CITIZEN_OFCLASS_F: 0.5,
 		    },
 		},
 		TARGET_RACE: CANTOR,
@@ -107,7 +108,7 @@ TECHS: {
 		COSTS: {
 			CIVIC_GOV: 10,
 		},
-		LEVEL_MAX: 3,
+		LEVEL_MAX: 6,
 		LEVEL_COST_INC: 10,
 		REQUIRES_TECH_LEVEL: {
 			CANPR1: 1,
@@ -115,6 +116,7 @@ TECHS: {
 		REQUIRES: {
 		    GREATERE: {
 		        POPULATION_CANTOR_SLAVE_I: 50,
+		        POPULATION_CANTOR_SLAVE_F: 1.0,
 			    POPULATION_HUMAN_CITIZEN_OFCLASS_F: 0.5,
 		    },
 		},
@@ -124,7 +126,7 @@ TECHS: {
             ROOM_MINE_ALL>MUL: 1.1,
             PHYSICS_SPEED>MUL: 1.1,
             ROOM_STOCKPILE>MUL: 1.1,
-            ROOM_WORKSHOP_ALL>MUL: 0.85,
+            ROOM_WORKSHOP_ALL>MUL: 0.95,
             BEHAVIOUR_HAPPINESS>MUL: 0.9,
             BATTLE_MORALE>MUL: 0.9,
 		},
@@ -141,12 +143,12 @@ TECHS: {
 		REQUIRES_TECH_LEVEL: {},
 		REQUIRES: {
 			GREATERE: {
-				POPULATION_ARGONOSH__I: 25,
+				POPULATION_ARGONOSH__I: 50,
 			},
 		},
 		BOOST: {
 		    CIVIC_GOV>ADD: 15,
-		    RELIGION_SHMALOR_CITY>MUL: 1.05,
+		    RELIGION_SHMALOR_CITY>MUL: 1.02,
 	    },
 	    ICON: 32->TECH_RACE_ARGONOSH->0,
 	},
@@ -194,11 +196,11 @@ TECHS: {
 
   **--Synergies------------------------------------**
 
-	ARGSY1: {    ** An Ancient Alliance, Reforged **
+	ARGSY1: {    ** An Ancient Alliance **
 		COSTS: {
 			CIVIC_GOV: 10,
 		},
-		LEVEL_MAX: 3,
+		LEVEL_MAX: 6,
 		LEVEL_COST_INC: 10,
 		REQUIRES_TECH_LEVEL: {
 			ARGPR1: 1,
@@ -216,7 +218,7 @@ TECHS: {
             WORLD_PLUNDER>MUL: 1.1,
             WORLD_CONSCRIPTABLE_TARGET>MUL: 1.1,
             BATTLE_FEAR>ADD: 0.1,
-            CIVIC_TRUST>MUL: 0.85,
+            CIVIC_TRUST>MUL: 0.9,
             CIVIC_OPINION>MUL: 0.9,
             RATES_TEMPLE>MUL: 1.3,
 		},
@@ -226,7 +228,7 @@ TECHS: {
 		COSTS: {
 			CIVIC_GOV: 10,
 		},
-		LEVEL_MAX: 3,
+		LEVEL_MAX: 6,
 		LEVEL_COST_INC: 10,
 		REQUIRES_TECH_LEVEL: {
 			ARGPR1: 1,
@@ -244,43 +246,11 @@ TECHS: {
             PHYSICS_MASS>MUL: 1.1,
             PHYSICS_DEATH_AGE>ADD: 10,
             ROOM__CANNIBAL>MUL: 1.1,
-            CIVIC_OPINION>MUL: 0.85,
+            CIVIC_OPINION>MUL: 0.9,
             ROOM_FARM_ALL>MUL: 0.9,
             RATES_HUNGER>MUL: 1.1,
 		},
 		ICON: 32->TECH_RACE_ARGONOSH->49,
-	},
-
-**--All Haven Races--------------------------------------------------------------------------**
-
-  **--Synergies-------------------------------------**
-
-	HAVSY1: {    ** Tech Name **
-		COSTS: {
-			CIVIC_GOV: 10,
-		},
-		LEVEL_MAX: 6,
-		LEVEL_COST_INC: 10,
-		REQUIRES_TECH_LEVEL: {
-			ARGPR1: 1,
-			CANPR1: 1,
-		},
-		REQUIRES: {
-		    GREATERE: {
-		        POPULATION_ARGONOSH_CITIZEN_I: 25,
-			    POPULATION_CANTOR_CITIZEN_I: 25,
-		    },
-		},
-		BOOST: {
-            XBOOST>MUL: 1.15,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 1.1,
-            XBOOST>MUL: 0.85,
-            XBOOST>MUL: 0.9,
-            XBOOST>MUL: 0.9,
-		},
-		ICON: 32->TECH_RACE->0,
 	},
 
 },
